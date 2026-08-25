@@ -61,7 +61,8 @@ def main():
 
     # ---- NSE: only on slow-cadence runs ----
     nse_cache_path = DATA_DIR / "nse_cache.json"
-    if args.refresh_nse:
+    must_refresh = args.refresh_nse or not nse_cache_path.exists()
+    if must_refresh:
         print("Refreshing NSE data (free float, shares, listing dates)...")
         refresh_nse_data(symbols, str(nse_cache_path), health_log,
                          as_of_date=str(review_date.date()))
