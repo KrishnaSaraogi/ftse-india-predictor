@@ -1,0 +1,3003 @@
+{
+  "nse": {
+    "360ONE": {
+      "free_float_pct": 63.56859999999925,
+      "shares": 406889174,
+      "listing_date": "19-Sep-2019 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "3MINDIA": {
+      "free_float_pct": 25.0,
+      "shares": 11265070,
+      "listing_date": "13-Aug-2004 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "AADHARHFC": {
+      "free_float_pct": 24.53598791139396,
+      "shares": 437737458,
+      "listing_date": "15-May-2024 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "AARTIIND": {
+      "free_float_pct": 56.60465692592498,
+      "shares": 362726573,
+      "listing_date": "08-Feb-1995 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "AAVAS": {
+      "free_float_pct": 50.174658535656434,
+      "shares": 79290026,
+      "listing_date": "08-Oct-2018 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ABB": {
+      "free_float_pct": 24.69520000000006,
+      "shares": 211908375,
+      "listing_date": "08-Feb-1995 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ABBOTINDIA": {
+      "free_float_pct": 24.446370882241915,
+      "shares": 21249302,
+      "listing_date": "08-Jan-2010 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ABCAPITAL": {
+      "free_float_pct": 31.291883904236123,
+      "shares": 2737045799,
+      "listing_date": "01-Sep-2017 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ABDL": {
+      "free_float_pct": 19.076210332104065,
+      "shares": 279710151,
+      "listing_date": "02-Jul-2024 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ABFRL": {
+      "free_float_pct": 48.09733330271987,
+      "shares": 1220510115,
+      "listing_date": "17-Jul-2013 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ABLBL": {
+      "free_float_pct": 47.45021897339617,
+      "shares": 1220521649,
+      "listing_date": "23-Jun-2025 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ABREL": {
+      "free_float_pct": 46.73164297380135,
+      "shares": 111695680,
+      "listing_date": "27-Jun-2003 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ABSLAMC": {
+      "free_float_pct": 25.140800000000407,
+      "shares": 289358498,
+      "listing_date": "11-Oct-2021 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ACC": {
+      "free_float_pct": 31.81502098869667,
+      "shares": 187787263,
+      "listing_date": "20-Nov-1996 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ACE": {
+      "free_float_pct": 34.458384505952324,
+      "shares": 119083196,
+      "listing_date": "26-Sep-2006 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ACMESOLAR": {
+      "free_float_pct": 28.416773830372804,
+      "shares": 706874336,
+      "listing_date": "13-Nov-2024 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ACUTAAS": {
+      "free_float_pct": 63.15783063172158,
+      "shares": 81871122,
+      "listing_date": "14-Sep-2021 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ADANIENSOL": {
+      "free_float_pct": 27.258437072086544,
+      "shares": 1222954468,
+      "listing_date": "31-Jul-2015 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ADANIENT": {
+      "free_float_pct": 22.128007224099765,
+      "shares": 1353429603,
+      "listing_date": "04-Jun-1997 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ADANIGREEN": {
+      "free_float_pct": 20.29823599969747,
+      "shares": 1647176155,
+      "listing_date": "18-Jun-2018 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ADANIPORTS": {
+      "free_float_pct": 31.92524450938723,
+      "shares": 2303959098,
+      "listing_date": "27-Nov-2007 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ADANIPOWER": {
+      "free_float_pct": 21.455257217146208,
+      "shares": 19284694705,
+      "listing_date": "20-Aug-2009 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "AEGISLOG": {
+      "free_float_pct": 35.696080374464245,
+      "shares": 351000000,
+      "listing_date": "03-Apr-1996 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "AEGISVOPAK": {
+      "free_float_pct": 12.987199999999016,
+      "shares": 1107991489,
+      "listing_date": "02-Jun-2025 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "AFCONS": {
+      "free_float_pct": 42.43294659429262,
+      "shares": 367784631,
+      "listing_date": "04-Nov-2024 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "AFFLE": {
+      "free_float_pct": 44.83980000000018,
+      "shares": 140879384,
+      "listing_date": "08-Aug-2019 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "AIAENG": {
+      "free_float_pct": 41.50573255589892,
+      "shares": 93320370,
+      "listing_date": "14-Dec-2005 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "AIIL": {
+      "free_float_pct": 31.053611805617663,
+      "shares": 849225500,
+      "listing_date": "23-Apr-2024 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "AJANTPHARM": {
+      "free_float_pct": 33.619048832943065,
+      "shares": 124959024,
+      "listing_date": "29-May-2000 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ALKEM": {
+      "free_float_pct": 48.803000000000786,
+      "shares": 119565000,
+      "listing_date": "23-Dec-2015 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "AMBER": {
+      "free_float_pct": 61.82263430440521,
+      "shares": 35267767,
+      "listing_date": "30-Jan-2018 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "AMBUJACEM": {
+      "free_float_pct": 25.02669515225298,
+      "shares": 2484817186,
+      "listing_date": "18-Feb-1998 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ANANDRATHI": {
+      "free_float_pct": 53.60046158821211,
+      "shares": 166041268,
+      "listing_date": "14-Dec-2021 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ANANTRAJ": {
+      "free_float_pct": 42.27303476562301,
+      "shares": 359876930,
+      "listing_date": "27-Sep-2006 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ANGELONE": {
+      "free_float_pct": 70.9434101232089,
+      "shares": 913687448,
+      "listing_date": "05-Oct-2020 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ANTHEM": {
+      "free_float_pct": 15.766496404929892,
+      "shares": 563408010,
+      "listing_date": "21-Jul-2025 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ANURAS": {
+      "free_float_pct": 26.53821844196809,
+      "shares": 113849841,
+      "listing_date": "24-Mar-2021 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "APARINDS": {
+      "free_float_pct": 41.94230000000042,
+      "shares": 41872337,
+      "listing_date": "12-Jul-2004 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "APLAPOLLO": {
+      "free_float_pct": 65.37413898305057,
+      "shares": 277658405,
+      "listing_date": "14-Dec-2011 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "APOLLOHOSP": {
+      "free_float_pct": 71.36411158204878,
+      "shares": 143784657,
+      "listing_date": "10-Jan-1996 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "APOLLOTYRE": {
+      "free_float_pct": 50.678999999998844,
+      "shares": 635100946,
+      "listing_date": "31-May-1995 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "APTUS": {
+      "free_float_pct": 70.53479999999728,
+      "shares": 500817736,
+      "listing_date": "24-Aug-2021 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ARE&M": {
+      "free_float_pct": 66.67858108621172,
+      "shares": 183025364,
+      "listing_date": "05-Sep-2003 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ASAHIINDIA": {
+      "free_float_pct": 47.4268360043894,
+      "shares": 254927192,
+      "listing_date": "18-Mar-1998 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ASHOKLEY": {
+      "free_float_pct": 48.54940926106645,
+      "shares": 5873854552,
+      "listing_date": "25-May-1995 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ASIANPAINT": {
+      "free_float_pct": 46.97514534662513,
+      "shares": 959197790,
+      "listing_date": "31-May-1995 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ASTERDM": {
+      "free_float_pct": 48.73000000000025,
+      "shares": 871672439,
+      "listing_date": "26-Feb-2018 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ASTRAL": {
+      "free_float_pct": 45.40460898086754,
+      "shares": 268650163,
+      "listing_date": "20-Mar-2007 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ATGL": {
+      "free_float_pct": 25.13424146858137,
+      "shares": 1099810083,
+      "listing_date": "05-Nov-2018 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ATHERENERG": {
+      "free_float_pct": 49.92611747175763,
+      "shares": 394493184,
+      "listing_date": "06-May-2025 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ATUL": {
+      "free_float_pct": 53.92614848437989,
+      "shares": 29441755,
+      "listing_date": "06-May-1998 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "AUBANK": {
+      "free_float_pct": 75.42148661791924,
+      "shares": 749930835,
+      "listing_date": "10-Jul-2017 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "AUROPHARMA": {
+      "free_float_pct": 47.960716033937786,
+      "shares": 575377895,
+      "listing_date": "19-Jul-2000 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "AWL": {
+      "free_float_pct": 42.59867794784865,
+      "shares": 1299678605,
+      "listing_date": "08-Feb-2022 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "AXISBANK": {
+      "free_float_pct": 92.0668439873673,
+      "shares": 3112905417,
+      "listing_date": "16-Nov-1998 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "BAJAJ-AUTO": {
+      "free_float_pct": 39.53154486099407,
+      "shares": 274803838,
+      "listing_date": "26-May-2008 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "BAJAJFINSV": {
+      "free_float_pct": 36.085219696212526,
+      "shares": 1602061346,
+      "listing_date": "26-May-2008 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "BAJAJHFL": {
+      "free_float_pct": 13.249322511904523,
+      "shares": 8332334619,
+      "listing_date": "16-Sep-2024 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "BAJAJHLDNG": {
+      "free_float_pct": 38.79490000000026,
+      "shares": 111293510,
+      "listing_date": "15-Mar-1995 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "BAJFINANCE": {
+      "free_float_pct": 42.936726292466844,
+      "shares": 6225954304,
+      "listing_date": "01-Apr-2003 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "BALKRISIND": {
+      "free_float_pct": 41.43919873695822,
+      "shares": 193317190,
+      "listing_date": "27-Jan-2006 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "BALRAMCHIN": {
+      "free_float_pct": 53.73250000000348,
+      "shares": 211467114,
+      "listing_date": "08-Feb-1995 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "BANDHANBNK": {
+      "free_float_pct": 56.49083348322266,
+      "shares": 1611111580,
+      "listing_date": "27-Mar-2018 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "BANKBARODA": {
+      "free_float_pct": 35.776384928607015,
+      "shares": 5171362179,
+      "listing_date": "19-Feb-1997 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "BANKINDIA": {
+      "free_float_pct": 26.622878197695275,
+      "shares": 4552667866,
+      "listing_date": "30-Apr-1997 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "BATAINDIA": {
+      "free_float_pct": 49.52449999999575,
+      "shares": 128527540,
+      "listing_date": "18-Jun-2003 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "BAYERCROP": {
+      "free_float_pct": 28.28022066772547,
+      "shares": 50107246,
+      "listing_date": "08-Jan-2010 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "BBTC": {
+      "free_float_pct": 24.75330000000251,
+      "shares": 69771900,
+      "listing_date": "03-Apr-1996 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "BDL": {
+      "free_float_pct": 25.069323337487585,
+      "shares": 366562500,
+      "listing_date": "23-Mar-2018 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "BEL": {
+      "free_float_pct": 48.84983460417664,
+      "shares": 7309778829,
+      "listing_date": "19-Jul-2000 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "BELRISE": {
+      "free_float_pct": 38.8582144931994,
+      "shares": 967151919,
+      "listing_date": "28-May-2025 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "BEML": {
+      "free_float_pct": 45.77954096460976,
+      "shares": 83289000,
+      "listing_date": "05-Nov-2003 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "BERGEPAINT": {
+      "free_float_pct": 24.386364733542024,
+      "shares": 1166002812,
+      "listing_date": "24-Nov-1999 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "BHARATFORG": {
+      "free_float_pct": 55.59630000000047,
+      "shares": 478088632,
+      "listing_date": "04-Apr-2003 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "BHARTIARTL": {
+      "free_float_pct": 49.77585407716482,
+      "shares": 6240501059,
+      "listing_date": "15-Feb-2002 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "BHARTIHEXA": {
+      "free_float_pct": 14.997184508540323,
+      "shares": 500000000,
+      "listing_date": "12-Apr-2024 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "BHEL": {
+      "free_float_pct": 41.78777737578393,
+      "shares": 3482063355,
+      "listing_date": "11-Nov-2003 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "BIKAJI": {
+      "free_float_pct": 26.07701498171011,
+      "shares": 250736400,
+      "listing_date": "16-Nov-2022 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "BIOCON": {
+      "free_float_pct": 43.88191201302611,
+      "shares": 1629694135,
+      "listing_date": "07-Apr-2004 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "BLS": {
+      "free_float_pct": 29.347083854511535,
+      "shares": 411740908,
+      "listing_date": "14-Jun-2016 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "BLUEDART": {
+      "free_float_pct": 24.861599999996123,
+      "shares": 23727934,
+      "listing_date": "12-Dec-2002 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "BLUEJET": {
+      "free_float_pct": 26.839065016527186,
+      "shares": 189275701,
+      "listing_date": "01-Nov-2023 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "BLUESTARCO": {
+      "free_float_pct": 62.925800000001175,
+      "shares": 205614788,
+      "listing_date": "15-Jun-2000 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "BOSCHLTD": {
+      "free_float_pct": 29.321824197223666,
+      "shares": 29496100,
+      "listing_date": "12-May-2003 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "BPCL": {
+      "free_float_pct": 46.59804196133916,
+      "shares": 4338505488,
+      "listing_date": "13-Sep-1995 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "BRIGADE": {
+      "free_float_pct": 56.65989888989049,
+      "shares": 326259283,
+      "listing_date": "31-Dec-2007 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "BRITANNIA": {
+      "free_float_pct": 48.78558202436777,
+      "shares": 240868296,
+      "listing_date": "05-Nov-1998 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "BSE": {
+      "free_float_pct": 99.90479999999968,
+      "shares": 407884077,
+      "listing_date": "03-Feb-2017 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "BSOFT": {
+      "free_float_pct": 59.15677121264584,
+      "shares": 279599589,
+      "listing_date": "24-Nov-1999 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "CAMS": {
+      "free_float_pct": 96.52582930332206,
+      "shares": 248297551,
+      "listing_date": "07-May-2021 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "CANBK": {
+      "free_float_pct": 36.95776603862125,
+      "shares": 9070651260,
+      "listing_date": "23-Dec-2002 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "CANFINHOME": {
+      "free_float_pct": 63.11160000000192,
+      "shares": 133154591,
+      "listing_date": "10-May-1995 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "CANHLIFE": {
+      "free_float_pct": 24.7352,
+      "shares": 950000000,
+      "listing_date": "17-Oct-2025 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "CAPLIPOINT": {
+      "free_float_pct": 26.155586331862857,
+      "shares": 76011696,
+      "listing_date": "23-Jun-2014 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "CARBORUNIV": {
+      "free_float_pct": 60.40266162485468,
+      "shares": 190493502,
+      "listing_date": "03-Apr-1996 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "CARTRADE": {
+      "free_float_pct": 88.00701293939073,
+      "shares": 48512035,
+      "listing_date": "20-Aug-2021 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "CASTROLIND": {
+      "free_float_pct": 48.2231164529921,
+      "shares": 989122384,
+      "listing_date": "14-Mar-2014 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "CCL": {
+      "free_float_pct": 52.73970475409635,
+      "shares": 133527920,
+      "listing_date": "07-Jun-2004 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "CDSL": {
+      "free_float_pct": 84.95905075817464,
+      "shares": 209000000,
+      "listing_date": "30-Jun-2017 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "CEATLTD": {
+      "free_float_pct": 51.56810000000135,
+      "shares": 40450092,
+      "listing_date": "01-Feb-2008 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "CEMPRO": {
+      "free_float_pct": 32.267153526192764,
+      "shares": 171787584,
+      "listing_date": "10-Feb-1999 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "CENTRALBK": {
+      "free_float_pct": 18.797458086561583,
+      "shares": 9051401274,
+      "listing_date": "21-Aug-2007 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "CESC": {
+      "free_float_pct": 47.42025178001783,
+      "shares": 1325570430,
+      "listing_date": "08-Feb-1995 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "CGCL": {
+      "free_float_pct": 40.10766620585578,
+      "shares": 962153962,
+      "listing_date": "29-Oct-2010 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "CGPOWER": {
+      "free_float_pct": 43.40975189195367,
+      "shares": 1575450059,
+      "listing_date": "01-Mar-1995 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "CHALET": {
+      "free_float_pct": 32.513853165830724,
+      "shares": 218994127,
+      "listing_date": "07-Feb-2019 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "CHAMBLFERT": {
+      "free_float_pct": 37.02999981419134,
+      "shares": 400652297,
+      "listing_date": "14-Jun-1995 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "CHENNPETRO": {
+      "free_float_pct": 32.22462437768417,
+      "shares": 148911400,
+      "listing_date": "07-Jun-2000 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "CHOICEIN": {
+      "free_float_pct": 38.14170580962642,
+      "shares": 222776500,
+      "listing_date": "08-Apr-2022 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "CHOLAFIN": {
+      "free_float_pct": 50.57612770784943,
+      "shares": 854013036,
+      "listing_date": "15-May-1996 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "CHOLAHLDNG": {
+      "free_float_pct": 52.64676551947286,
+      "shares": 187777462,
+      "listing_date": "25-Sep-2017 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "CIEINDIA": {
+      "free_float_pct": 33.52572344714413,
+      "shares": 379362377,
+      "listing_date": "30-Aug-2007 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "CIPLA": {
+      "free_float_pct": 69.45270655206465,
+      "shares": 807853166,
+      "listing_date": "08-Feb-1995 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "CLEAN": {
+      "free_float_pct": 44.799627195327666,
+      "shares": 106282520,
+      "listing_date": "19-Jul-2021 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "COALINDIA": {
+      "free_float_pct": 38.75889999999993,
+      "shares": 6162728327,
+      "listing_date": "04-Nov-2010 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "COCHINSHIP": {
+      "free_float_pct": 32.113200315250566,
+      "shares": 263080780,
+      "listing_date": "11-Aug-2017 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "COFORGE": {
+      "free_float_pct": 78.4747884030416,
+      "shares": 442920492,
+      "listing_date": "30-Aug-2004 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "COHANCE": {
+      "free_float_pct": 42.40624006734281,
+      "shares": 382597330,
+      "listing_date": "09-Mar-2020 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "COLPAL": {
+      "free_float_pct": 48.26802070512735,
+      "shares": 271985634,
+      "listing_date": "17-Dec-2007 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "CONCOR": {
+      "free_float_pct": 45.169472467710285,
+      "shares": 761617935,
+      "listing_date": "07-May-1997 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "CONCORDBIO": {
+      "free_float_pct": 31.596799999998538,
+      "shares": 104616204,
+      "listing_date": "18-Aug-2023 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "COROMANDEL": {
+      "free_float_pct": 40.408788888308145,
+      "shares": 295016439,
+      "listing_date": "31-May-1995 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "CPPLUS": {
+      "free_float_pct": 22.8551319231798,
+      "shares": 118300435,
+      "listing_date": "05-Aug-2025 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "CRAFTSMAN": {
+      "free_float_pct": 55.54914093601002,
+      "shares": 26154433,
+      "listing_date": "25-Mar-2021 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "CREDITACC": {
+      "free_float_pct": 33.7388822653824,
+      "shares": 160454355,
+      "listing_date": "23-Aug-2018 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "CRISIL": {
+      "free_float_pct": 33.248899999999246,
+      "shares": 73130017,
+      "listing_date": "28-Jun-1995 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "CROMPTON": {
+      "free_float_pct": 99.52962501028307,
+      "shares": 643914875,
+      "listing_date": "13-May-2016 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "CUB": {
+      "free_float_pct": 96.88200141663683,
+      "shares": 990787237,
+      "listing_date": "25-Aug-1998 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "CUMMINSIND": {
+      "free_float_pct": 48.58537638142747,
+      "shares": 277200000,
+      "listing_date": "29-Mar-1995 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "CYIENT": {
+      "free_float_pct": 75.81155529598566,
+      "shares": 104741804,
+      "listing_date": "30-Sep-1998 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "DABUR": {
+      "free_float_pct": 33.18918710496298,
+      "shares": 1773957026,
+      "listing_date": "28-Apr-1999 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "DALBHARAT": {
+      "free_float_pct": 42.28399146414524,
+      "shares": 187565953,
+      "listing_date": "22-Jan-2019 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "DATAPATTNS": {
+      "free_float_pct": 53.78641054088684,
+      "shares": 55983969,
+      "listing_date": "24-Dec-2021 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "DCMSHRIRAM": {
+      "free_float_pct": 25.37688506598493,
+      "shares": 155942296,
+      "listing_date": "12-Apr-1995 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "DEEPAKFERT": {
+      "free_float_pct": 52.92649725226403,
+      "shares": 126237825,
+      "listing_date": "17-Jan-2003 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "DEEPAKNTR": {
+      "free_float_pct": 50.18753802816808,
+      "shares": 136393041,
+      "listing_date": "29-Sep-2010 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "DELHIVERY": {
+      "free_float_pct": 74.55309103300748,
+      "shares": 749166930,
+      "listing_date": "24-May-2022 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "DEVYANI": {
+      "free_float_pct": 34.44009999999973,
+      "shares": 1232939791,
+      "listing_date": "16-Aug-2021 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "DIVISLAB": {
+      "free_float_pct": 47.75044631225796,
+      "shares": 265468580,
+      "listing_date": "12-Mar-2003 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "DIXON": {
+      "free_float_pct": 67.69452579572456,
+      "shares": 61142131,
+      "listing_date": "18-Sep-2017 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "DLF": {
+      "free_float_pct": 25.84220887604291,
+      "shares": 2475315036,
+      "listing_date": "05-Jul-2007 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "DMART": {
+      "free_float_pct": 24.642014549363914,
+      "shares": 652245977,
+      "listing_date": "21-Mar-2017 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "DOMS": {
+      "free_float_pct": 29.61109999999906,
+      "shares": 60688336,
+      "listing_date": "20-Dec-2023 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "DRREDDY": {
+      "free_float_pct": 72.84679255829624,
+      "shares": 834675800,
+      "listing_date": "30-May-2003 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ECLERX": {
+      "free_float_pct": 43.23527260624169,
+      "shares": 94050718,
+      "listing_date": "31-Dec-2007 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "EICHERMOT": {
+      "free_float_pct": 50.087751613703865,
+      "shares": 274521706,
+      "listing_date": "07-Sep-2004 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "EIDPARRY": {
+      "free_float_pct": 57.69220457948923,
+      "shares": 177955692,
+      "listing_date": "10-May-1995 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "EIHOTEL": {
+      "free_float_pct": 31.600316295196095,
+      "shares": 625364182,
+      "listing_date": "08-Feb-1995 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ELECON": {
+      "free_float_pct": 39.0372978400425,
+      "shares": 224399930,
+      "listing_date": "29-Sep-2006 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ELGIEQUIP": {
+      "free_float_pct": 67.57061725804886,
+      "shares": 316909016,
+      "listing_date": "22-Nov-1995 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "EMAMILTD": {
+      "free_float_pct": 45.04904390607529,
+      "shares": 436500000,
+      "listing_date": "03-Aug-2006 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "EMCURE": {
+      "free_float_pct": 18.089300000001398,
+      "shares": 189680147,
+      "listing_date": "10-Jul-2024 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "EMMVEE": {
+      "free_float_pct": 19.302599999998822,
+      "shares": 692345033,
+      "listing_date": "18-Nov-2025 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ENDURANCE": {
+      "free_float_pct": 24.999799999999237,
+      "shares": 140662848,
+      "listing_date": "19-Oct-2016 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ENGINERSIN": {
+      "free_float_pct": 48.638381240498596,
+      "shares": 562042373,
+      "listing_date": "20-Aug-1997 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ENRIN": {
+      "free_float_pct": 24.75781550430936,
+      "shares": 356120505,
+      "listing_date": "19-Jun-2025 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ERIS": {
+      "free_float_pct": 38.89705976363123,
+      "shares": 138583305,
+      "listing_date": "29-Jun-2017 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ESCORTS": {
+      "free_float_pct": 29.616129766759286,
+      "shares": 111877754,
+      "listing_date": "01-Mar-1995 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ETERNAL": {
+      "free_float_pct": 74.67110192657756,
+      "shares": 9650350647,
+      "listing_date": "23-Jul-2021 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "EXIDEIND": {
+      "free_float_pct": 53.3748,
+      "shares": 850000000,
+      "listing_date": "17-Jun-2003 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "FACT": {
+      "free_float_pct": 9.611902663876245,
+      "shares": 647071974,
+      "listing_date": "12-Apr-1995 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "FEDERALBNK": {
+      "free_float_pct": 99.54519505889084,
+      "shares": 2472789571,
+      "listing_date": "08-Feb-1995 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "FINCABLES": {
+      "free_float_pct": 49.35668402528985,
+      "shares": 152939345,
+      "listing_date": "15-Feb-1995 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "FIRSTCRY": {
+      "free_float_pct": 43.12782828125032,
+      "shares": 522088240,
+      "listing_date": "13-Aug-2024 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "FIVESTAR": {
+      "free_float_pct": 65.43860000000166,
+      "shares": 295188618,
+      "listing_date": "21-Nov-2022 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "FLUOROCHEM": {
+      "free_float_pct": 38.28189453036754,
+      "shares": 109850000,
+      "listing_date": "16-Oct-2019 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "FORCEMOT": {
+      "free_float_pct": 36.85550000000079,
+      "shares": 13032914,
+      "listing_date": "14-Feb-2024 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "FORTIS": {
+      "free_float_pct": 68.8219918150238,
+      "shares": 754958148,
+      "listing_date": "09-May-2007 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "FSL": {
+      "free_float_pct": 45.3409109581577,
+      "shares": 696990826,
+      "listing_date": "22-Feb-2007 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "GABRIEL": {
+      "free_float_pct": 35.655700000000465,
+      "shares": 177230023,
+      "listing_date": "20-Apr-2005 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "GAIL": {
+      "free_float_pct": 40.90734886781644,
+      "shares": 6575099643,
+      "listing_date": "02-Apr-1997 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "GALLANTT": {
+      "free_float_pct": 12.362699999998222,
+      "shares": 241280945,
+      "listing_date": "04-Apr-2006 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "GESHIP": {
+      "free_float_pct": 69.25452514805932,
+      "shares": 142767161,
+      "listing_date": "27-Nov-2006 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "GICRE": {
+      "free_float_pct": 22.576,
+      "shares": 1754400000,
+      "listing_date": "25-Oct-2017 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "GILLETTE": {
+      "free_float_pct": 24.885350016823267,
+      "shares": 32585217,
+      "listing_date": "30-Jul-2003 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "GLAND": {
+      "free_float_pct": 48.16407015974452,
+      "shares": 164966661,
+      "listing_date": "20-Nov-2020 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "GLAXO": {
+      "free_float_pct": 24.357733101139914,
+      "shares": 169406034,
+      "listing_date": "15-Dec-2000 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "GLENMARK": {
+      "free_float_pct": 53.20589999999991,
+      "shares": 282224672,
+      "listing_date": "07-Feb-2000 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "GMDCLTD": {
+      "free_float_pct": 25.950100000000003,
+      "shares": 318000000,
+      "listing_date": "17-Dec-1997 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "GMRAIRPORT": {
+      "free_float_pct": 33.61020982349975,
+      "shares": 10558975952,
+      "listing_date": "21-Aug-2006 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "GODFRYPHLP": {
+      "free_float_pct": 26.09311294625785,
+      "shares": 155981760,
+      "listing_date": "24-Jul-1996 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "GODIGIT": {
+      "free_float_pct": 25.97243765706701,
+      "shares": 924737757,
+      "listing_date": "23-May-2024 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "GODREJCP": {
+      "free_float_pct": 39.182598155538805,
+      "shares": 1023304953,
+      "listing_date": "20-Jun-2001 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "GODREJIND": {
+      "free_float_pct": 12.765454019539362,
+      "shares": 336851055,
+      "listing_date": "25-Feb-2003 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "GODREJPROP": {
+      "free_float_pct": 44.757060982772735,
+      "shares": 301226497,
+      "listing_date": "05-Jan-2010 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "GPIL": {
+      "free_float_pct": 36.41362540849452,
+      "shares": 673097430,
+      "listing_date": "25-Apr-2006 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "GRANULES": {
+      "free_float_pct": 58.42035905312159,
+      "shares": 247796921,
+      "listing_date": "20-Jun-2005 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "GRAPHITE": {
+      "free_float_pct": 34.053943593188336,
+      "shares": 195375594,
+      "listing_date": "07-Feb-2003 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "GRASIM": {
+      "free_float_pct": 55.24632895990156,
+      "shares": 680537721,
+      "listing_date": "10-May-1995 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "GRAVITA": {
+      "free_float_pct": 42.77053859279722,
+      "shares": 73808451,
+      "listing_date": "16-Nov-2010 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "GROWW": {
+      "free_float_pct": 12.23370291276485,
+      "shares": 6273596631,
+      "listing_date": "12-Nov-2025 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "GRSE": {
+      "free_float_pct": 25.5,
+      "shares": 114552000,
+      "listing_date": "10-Oct-2018 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "GVT&D": {
+      "free_float_pct": 48.23551979396223,
+      "shares": 256046535,
+      "listing_date": "30-Jun-2008 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "HAL": {
+      "free_float_pct": 28.292996557377048,
+      "shares": 668775000,
+      "listing_date": "28-Mar-2018 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "HAVELLS": {
+      "free_float_pct": 40.033487055118385,
+      "shares": 627561652,
+      "listing_date": "21-Mar-2001 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "HBLENGINE": {
+      "free_float_pct": 40.5178334314204,
+      "shares": 277194946,
+      "listing_date": "04-Jan-2007 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "HCLTECH": {
+      "free_float_pct": 38.73933646446872,
+      "shares": 2713665096,
+      "listing_date": "06-Jan-2000 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "HDBFS": {
+      "free_float_pct": 25.482200000000688,
+      "shares": 830643919,
+      "listing_date": "02-Jul-2025 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "HDFCAMC": {
+      "free_float_pct": 47.416372742841986,
+      "shares": 428786782,
+      "listing_date": "06-Aug-2018 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "HDFCBANK": {
+      "free_float_pct": 99.16689992400694,
+      "shares": 15411120898,
+      "listing_date": "08-Nov-1995 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "HDFCLIFE": {
+      "free_float_pct": 49.70214843408593,
+      "shares": 2172474981,
+      "listing_date": "17-Nov-2017 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "HEG": {
+      "free_float_pct": 42.949538098544366,
+      "shares": 192977530,
+      "listing_date": "10-May-1995 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "HEROMOTOCO": {
+      "free_float_pct": 64.75465969750861,
+      "shares": 200141207,
+      "listing_date": "11-Apr-2003 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "HEXT": {
+      "free_float_pct": 24.210900000000958,
+      "shares": 611015992,
+      "listing_date": "19-Feb-2025 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "HFCL": {
+      "free_float_pct": 66.73825085817043,
+      "shares": 1530602463,
+      "listing_date": "09-Mar-2011 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "HINDALCO": {
+      "free_float_pct": 64.2502999999999,
+      "shares": 2247226523,
+      "listing_date": "08-Jan-1997 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "HINDCOPPER": {
+      "free_float_pct": 33.83546258426924,
+      "shares": 967024020,
+      "listing_date": "15-Sep-2010 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "HINDPETRO": {
+      "free_float_pct": 44.99838014981229,
+      "shares": 2127822518,
+      "listing_date": "17-Jun-1998 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "HINDUNILVR": {
+      "free_float_pct": 37.63860541930374,
+      "shares": 2349591262,
+      "listing_date": "06-Jul-1995 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "HINDZINC": {
+      "free_float_pct": 11.342042278822623,
+      "shares": 4225319000,
+      "listing_date": "21-Nov-2006 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "HOMEFIRST": {
+      "free_float_pct": 92.1010617408926,
+      "shares": 104533764,
+      "listing_date": "03-Feb-2021 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "HONASA": {
+      "free_float_pct": 41.66415790446921,
+      "shares": 326024216,
+      "listing_date": "07-Nov-2023 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "HONAUT": {
+      "free_float_pct": 24.799580852513976,
+      "shares": 8841523,
+      "listing_date": "18-Jul-2003 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "HSCL": {
+      "free_float_pct": 46.435986451220316,
+      "shares": 504574175,
+      "listing_date": "02-Mar-2007 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "HUDCO": {
+      "free_float_pct": 24.990659678371212,
+      "shares": 2001900000,
+      "listing_date": "19-May-2017 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "HYUNDAI": {
+      "free_float_pct": 17.499199999999778,
+      "shares": 812541100,
+      "listing_date": "22-Oct-2024 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ICICIAMC": {
+      "free_float_pct": 9.86660236898561,
+      "shares": 494258520,
+      "listing_date": "19-Dec-2025 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ICICIBANK": {
+      "free_float_pct": 99.58379999999997,
+      "shares": 7176395023,
+      "listing_date": "17-Sep-1997 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ICICIGI": {
+      "free_float_pct": 48.56812468890039,
+      "shares": 499527285,
+      "listing_date": "27-Sep-2017 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ICICIPRULI": {
+      "free_float_pct": 27.189734862295513,
+      "shares": 1450812223,
+      "listing_date": "29-Sep-2016 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "IDBI": {
+      "free_float_pct": 5.198722752999573,
+      "shares": 10752402175,
+      "listing_date": "20-Sep-1995 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "IDEA": {
+      "free_float_pct": 25.339799999999745,
+      "shares": 108343035001,
+      "listing_date": "09-Mar-2007 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "IDFCFIRSTB": {
+      "free_float_pct": 76.81479999999993,
+      "shares": 8621219589,
+      "listing_date": "06-Nov-2015 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "IEX": {
+      "free_float_pct": 88.866924890833,
+      "shares": 891692735,
+      "listing_date": "23-Oct-2017 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "IFCI": {
+      "free_float_pct": 24.640300957394167,
+      "shares": 2694314331,
+      "listing_date": "26-Apr-1995 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "IGIL": {
+      "free_float_pct": 23.445600000003008,
+      "shares": 432159696,
+      "listing_date": "20-Dec-2024 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "IGL": {
+      "free_float_pct": 49.97694369702716,
+      "shares": 1400001600,
+      "listing_date": "26-Dec-2003 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "IIFL": {
+      "free_float_pct": 54.55926540500271,
+      "shares": 425381042,
+      "listing_date": "17-May-2005 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "IKS": {
+      "free_float_pct": 29.838900000000596,
+      "shares": 171573159,
+      "listing_date": "19-Dec-2024 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "INDGN": {
+      "free_float_pct": 42.80948045558958,
+      "shares": 240966756,
+      "listing_date": "13-May-2024 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "INDHOTEL": {
+      "free_float_pct": 61.51909999999954,
+      "shares": 1423432227,
+      "listing_date": "03-Jul-1996 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "INDIACEM": {
+      "free_float_pct": 22.134000000001507,
+      "shares": 309897201,
+      "listing_date": "31-May-2000 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "INDIAMART": {
+      "free_float_pct": 50.8643900091329,
+      "shares": 60143148,
+      "listing_date": "04-Jul-2019 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "INDIANB": {
+      "free_float_pct": 26.164392208977148,
+      "shares": 1346963981,
+      "listing_date": "01-Mar-2007 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "INDIGO": {
+      "free_float_pct": 58.3833469046235,
+      "shares": 386666597,
+      "listing_date": "10-Nov-2015 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "INDUSINDBK": {
+      "free_float_pct": 84.29940000000033,
+      "shares": 779132752,
+      "listing_date": "28-Jan-1998 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "INDUSTOWER": {
+      "free_float_pct": 48.734721282950154,
+      "shares": 2638162757,
+      "listing_date": "28-Dec-2012 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "INFY": {
+      "free_float_pct": 86.20829999999991,
+      "shares": 4058056597,
+      "listing_date": "08-Feb-1995 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "INOXWIND": {
+      "free_float_pct": 55.668040940691576,
+      "shares": 1728237822,
+      "listing_date": "09-Apr-2015 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "INTELLECT": {
+      "free_float_pct": 64.22279508196583,
+      "shares": 140266701,
+      "listing_date": "18-Dec-2014 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "IOB": {
+      "free_float_pct": 7.561400000000497,
+      "shares": 19256589795,
+      "listing_date": "07-Dec-2000 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "IOC": {
+      "free_float_pct": 26.394225162454926,
+      "shares": 14121238383,
+      "listing_date": "24-Jul-1996 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "IPCALAB": {
+      "free_float_pct": 54.621143410569815,
+      "shares": 253704218,
+      "listing_date": "08-Feb-1995 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "IRB": {
+      "free_float_pct": 32.385200000000005,
+      "shares": 12078000000,
+      "listing_date": "25-Feb-2008 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "IRCON": {
+      "free_float_pct": 34.54940000000283,
+      "shares": 940515740,
+      "listing_date": "28-Sep-2018 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "IRCTC": {
+      "free_float_pct": 37.59950609920265,
+      "shares": 800000000,
+      "listing_date": "14-Oct-2019 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "IREDA": {
+      "free_float_pct": 28.25342127480008,
+      "shares": 2809231268,
+      "listing_date": "29-Nov-2023 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "IRFC": {
+      "free_float_pct": 15.34880000000033,
+      "shares": 13068506000,
+      "listing_date": "29-Jan-2021 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ITC": {
+      "free_float_pct": 76.73499703923025,
+      "shares": 12529782032,
+      "listing_date": "23-Aug-1995 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ITCHOTELS": {
+      "free_float_pct": 53.629140803661535,
+      "shares": 2082976309,
+      "listing_date": "29-Jan-2025 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ITI": {
+      "free_float_pct": 9.984198412697864,
+      "shares": 962851967,
+      "listing_date": "15-Sep-2003 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "J&KBANK": {
+      "free_float_pct": 40.37276934467901,
+      "shares": 1101182463,
+      "listing_date": "22-Jul-1998 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "JAINREC": {
+      "free_float_pct": 20.450784871038856,
+      "shares": 345085814,
+      "listing_date": "01-Oct-2025 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "JBCHEPHARM": {
+      "shares": 160558706,
+      "listing_date": "29-Apr-2003 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "JBMA": {
+      "free_float_pct": 16.999954591679245,
+      "shares": 236494264,
+      "listing_date": "17-Dec-2004 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "JINDALSAW": {
+      "free_float_pct": 36.31843259521613,
+      "shares": 639508234,
+      "listing_date": "29-Apr-2003 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "JINDALSTEL": {
+      "free_float_pct": 36.1931067826083,
+      "shares": 1020088097,
+      "listing_date": "29-Dec-1999 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "JIOFIN": {
+      "free_float_pct": 49.540679104785305,
+      "shares": 6603141623,
+      "listing_date": "21-Aug-2023 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "JKCEMENT": {
+      "free_float_pct": 53.97607538535735,
+      "shares": 77268251,
+      "listing_date": "14-Mar-2006 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "JKTYRE": {
+      "free_float_pct": 43.26680000000056,
+      "shares": 288289511,
+      "listing_date": "19-Mar-2007 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "JMFINANCIL": {
+      "free_float_pct": 40.156874255902935,
+      "shares": 956959936,
+      "listing_date": "10-Oct-2006 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "JPPOWER": {
+      "free_float_pct": 70.79745443856979,
+      "shares": 6853458827,
+      "listing_date": "18-Apr-2005 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "JSL": {
+      "free_float_pct": 37.89463942775432,
+      "shares": 824419588,
+      "listing_date": "17-Nov-2003 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "JSWCEMENT": {
+      "free_float_pct": 19.51640344000163,
+      "shares": 1363364936,
+      "listing_date": "14-Aug-2025 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "JSWDULUX": {
+      "free_float_pct": 37.77579999999711,
+      "shares": 45540314,
+      "listing_date": "28-Jun-2001 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "JSWENERGY": {
+      "free_float_pct": 33.340271703676876,
+      "shares": 1833482736,
+      "listing_date": "04-Jan-2010 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "JSWINFRA": {
+      "free_float_pct": 25.531697607654912,
+      "shares": 2330001567,
+      "listing_date": "03-Oct-2023 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "JSWSTEEL": {
+      "free_float_pct": 38.24148557312262,
+      "shares": 2445453966,
+      "listing_date": "23-Mar-2005 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "JUBLFOOD": {
+      "free_float_pct": 59.13630185294024,
+      "shares": 659845200,
+      "listing_date": "08-Feb-2010 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "JUBLINGREA": {
+      "free_float_pct": 52.49749648616678,
+      "shares": 159281139,
+      "listing_date": "19-Mar-2021 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "JUBLPHARMA": {
+      "free_float_pct": 50.45307886681031,
+      "shares": 159281139,
+      "listing_date": "16-Jun-2003 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "JWL": {
+      "free_float_pct": 31.67825138860464,
+      "shares": 427370389,
+      "listing_date": "18-Oct-2010 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "JYOTICNC": {
+      "free_float_pct": 37.36520004066997,
+      "shares": 227423096,
+      "listing_date": "16-Jan-2024 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "KAJARIACER": {
+      "free_float_pct": 51.87014232132326,
+      "shares": 157143050,
+      "listing_date": "01-Jun-2004 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "KALYANKJIL": {
+      "free_float_pct": 37.126951537835026,
+      "shares": 1032750972,
+      "listing_date": "26-Mar-2021 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "KARURVYSYA": {
+      "free_float_pct": 97.46429999999864,
+      "shares": 966561189,
+      "listing_date": "26-Jul-2000 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "KAYNES": {
+      "free_float_pct": 46.534199999999906,
+      "shares": 67034654,
+      "listing_date": "22-Nov-2022 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "KEC": {
+      "free_float_pct": 48.5922,
+      "shares": 266200000,
+      "listing_date": "10-Mar-2006 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "KEI": {
+      "free_float_pct": 64.35212515393891,
+      "shares": 95600595,
+      "listing_date": "23-Mar-2006 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "KFINTECH": {
+      "free_float_pct": 77.14250000000295,
+      "shares": 172872079,
+      "listing_date": "29-Dec-2022 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "KIMS": {
+      "free_float_pct": 61.53813845954613,
+      "shares": 420006484,
+      "listing_date": "28-Jun-2021 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "KIRLOSENG": {
+      "free_float_pct": 57.13109852556693,
+      "shares": 145519854,
+      "listing_date": "24-Dec-2010 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "KOTAKBANK": {
+      "free_float_pct": 73.8416837443945,
+      "shares": 9947370773,
+      "listing_date": "20-Dec-1995 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "KPIL": {
+      "free_float_pct": 66.2824368147736,
+      "shares": 170772546,
+      "listing_date": "15-Dec-2000 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "KPITTECH": {
+      "free_float_pct": 59.66208671555344,
+      "shares": 274143808,
+      "listing_date": "22-Apr-2019 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "KPRMILL": {
+      "free_float_pct": 32.445896044387815,
+      "shares": 341814000,
+      "listing_date": "28-Aug-2007 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "LALPATHLAB": {
+      "free_float_pct": 46.34917650111664,
+      "shares": 167848820,
+      "listing_date": "23-Dec-2015 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "LATENTVIEW": {
+      "free_float_pct": 34.86509999999478,
+      "shares": 206924980,
+      "listing_date": "23-Nov-2021 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "LAURUSLABS": {
+      "free_float_pct": 71.87285894544702,
+      "shares": 540312218,
+      "listing_date": "19-Dec-2016 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "LEMONTREE": {
+      "free_float_pct": 62.522526554912226,
+      "shares": 792246464,
+      "listing_date": "09-Apr-2018 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "LENSKART": {
+      "free_float_pct": 19.21312752279843,
+      "shares": 1738720607,
+      "listing_date": "10-Nov-2025 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "LGEINDIA": {
+      "free_float_pct": 14.997333649345263,
+      "shares": 678772392,
+      "listing_date": "14-Oct-2025 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "LICHSGFIN": {
+      "free_float_pct": 54.51119714823249,
+      "shares": 550063000,
+      "listing_date": "29-Jul-1998 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "LICI": {
+      "free_float_pct": 3.499169927665153,
+      "shares": 12649995402,
+      "listing_date": "17-May-2022 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "LINDEINDIA": {
+      "free_float_pct": 24.617983889315013,
+      "shares": 85284223,
+      "listing_date": "16-Jun-1999 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "LLOYDSME": {
+      "free_float_pct": 23.060853579777547,
+      "shares": 562906951,
+      "listing_date": "17-Jul-2023 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "LODHA": {
+      "free_float_pct": 27.688528521016075,
+      "shares": 999178522,
+      "listing_date": "19-Apr-2021 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "LT": {
+      "free_float_pct": 84.83969999999992,
+      "shares": 1375866086,
+      "listing_date": "23-Jun-2004 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "LTF": {
+      "free_float_pct": 33.96635611172107,
+      "shares": 2506045818,
+      "listing_date": "12-Aug-2011 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "LTFOODS": {
+      "free_float_pct": 39.53818256456824,
+      "shares": 347252944,
+      "listing_date": "18-Dec-2006 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "LTM": {
+      "free_float_pct": 31.22645036025311,
+      "shares": 296621321,
+      "listing_date": "21-Jul-2016 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "LTTS": {
+      "free_float_pct": 25.920917538202843,
+      "shares": 106077543,
+      "listing_date": "23-Sep-2016 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "LUPIN": {
+      "free_float_pct": 52.96002966436745,
+      "shares": 457234894,
+      "listing_date": "10-Sep-2001 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "M&M": {
+      "free_float_pct": 71.53487899453033,
+      "shares": 1243528831,
+      "listing_date": "03-Jan-1996 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "M&MFIN": {
+      "free_float_pct": 47.45014994074983,
+      "shares": 1389971160,
+      "listing_date": "17-Mar-2006 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "MAHABANK": {
+      "free_float_pct": 26.398899999999596,
+      "shares": 7691554950,
+      "listing_date": "12-Apr-2004 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "MANAPPURAM": {
+      "free_float_pct": 58.290450429800046,
+      "shares": 939336102,
+      "listing_date": "01-Dec-2014 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "MANKIND": {
+      "free_float_pct": 27.309539916356574,
+      "shares": 412995978,
+      "listing_date": "09-May-2023 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "MAPMYINDIA": {
+      "free_float_pct": 31.522800000001517,
+      "shares": 54761056,
+      "listing_date": "21-Dec-2021 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "MARICO": {
+      "free_float_pct": 40.66154116250094,
+      "shares": 1298387850,
+      "listing_date": "01-May-1996 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "MARUTI": {
+      "free_float_pct": 41.38609917900608,
+      "shares": 314402574,
+      "listing_date": "09-Jul-2003 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "MAXHEALTH": {
+      "free_float_pct": 76.24065034270382,
+      "shares": 973276486,
+      "listing_date": "21-Aug-2020 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "MAZDOCK": {
+      "free_float_pct": 18.7938270850065,
+      "shares": 403380000,
+      "listing_date": "12-Oct-2020 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "MCX": {
+      "free_float_pct": 99.76245558437653,
+      "shares": 254991845,
+      "listing_date": "09-Mar-2012 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "MEDANTA": {
+      "free_float_pct": 31.759299999998873,
+      "shares": 268871782,
+      "listing_date": "16-Nov-2022 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "MEESHO": {
+      "free_float_pct": 12.083992901678794,
+      "shares": 4623569638,
+      "listing_date": "10-Dec-2025 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "MFSL": {
+      "free_float_pct": 76.68274631519306,
+      "shares": 345114771,
+      "listing_date": "17-May-2000 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "MGL": {
+      "free_float_pct": 57.412043131571586,
+      "shares": 98777778,
+      "listing_date": "01-Jul-2016 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "MINDACORP": {
+      "free_float_pct": 33.519211400884316,
+      "shares": 239079428,
+      "listing_date": "16-Oct-2014 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "MMTC": {
+      "free_float_pct": 10.059341090114009,
+      "shares": 1500000000,
+      "listing_date": "09-Apr-2012 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "MOTHERSON": {
+      "free_float_pct": 41.748163986711106,
+      "shares": 10554442601,
+      "listing_date": "14-Aug-1996 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "MOTILALOFS": {
+      "free_float_pct": 25.907763729031213,
+      "shares": 602323233,
+      "listing_date": "11-Sep-2007 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "MPHASIS": {
+      "free_float_pct": 69.15700000000095,
+      "shares": 190876743,
+      "listing_date": "04-Jun-2004 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "MRF": {
+      "free_float_pct": 47.69720000000028,
+      "shares": 4241143,
+      "listing_date": "18-Sep-1996 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "MRPL": {
+      "free_float_pct": 10.027757456419073,
+      "shares": 1752598777,
+      "listing_date": "07-Jan-2005 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "MSUMI": {
+      "free_float_pct": 38.249478536317035,
+      "shares": 6631661898,
+      "listing_date": "28-Mar-2022 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "MUTHOOTFIN": {
+      "free_float_pct": 26.63749999999973,
+      "shares": 401468476,
+      "listing_date": "06-May-2011 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "NAM-INDIA": {
+      "free_float_pct": 27.989500000000138,
+      "shares": 639781566,
+      "listing_date": "06-Nov-2017 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "NATCOPHARM": {
+      "free_float_pct": 50.02428623853521,
+      "shares": 179109870,
+      "listing_date": "27-Dec-1995 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "NATIONALUM": {
+      "free_float_pct": 48.69526317721575,
+      "shares": 1836631787,
+      "listing_date": "28-Apr-1999 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "NAUKRI": {
+      "free_float_pct": 58.835737041738255,
+      "shares": 648420600,
+      "listing_date": "21-Nov-2006 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "NAVA": {
+      "free_float_pct": 48.89800526269337,
+      "shares": 283255096,
+      "listing_date": "03-Apr-1996 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "NAVINFLUOR": {
+      "free_float_pct": 71.59729387232404,
+      "shares": 51284279,
+      "listing_date": "01-Jun-2007 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "NBCC": {
+      "free_float_pct": 38.22893696602758,
+      "shares": 2700000000,
+      "listing_date": "12-Apr-2012 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "NCC": {
+      "free_float_pct": 64.27660027078261,
+      "shares": 627846588,
+      "listing_date": "14-Oct-2003 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "NESTLEIND": {
+      "free_float_pct": 37.086876997479806,
+      "shares": 1928314320,
+      "listing_date": "01-Aug-2023 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "NETWEB": {
+      "free_float_pct": 33.00859103346189,
+      "shares": 59445906,
+      "listing_date": "27-Jul-2023 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "NEULANDLAB": {
+      "free_float_pct": 67.02860000000088,
+      "shares": 12829889,
+      "listing_date": "13-Oct-2008 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "NEWGEN": {
+      "free_float_pct": 44.73823664762509,
+      "shares": 142510002,
+      "listing_date": "29-Jan-2018 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "NH": {
+      "free_float_pct": 33.75156395064461,
+      "shares": 204360804,
+      "listing_date": "06-Jan-2016 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "NHPC": {
+      "free_float_pct": 37.412310141139606,
+      "shares": 10045034805,
+      "listing_date": "01-Sep-2009 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "NIACL": {
+      "free_float_pct": 14.554161558552318,
+      "shares": 1648000000,
+      "listing_date": "13-Nov-2017 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "NIVABUPA": {
+      "free_float_pct": 33.40089542679328,
+      "shares": 1849233703,
+      "listing_date": "14-Nov-2024 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "NLCINDIA": {
+      "free_float_pct": 26.186100000000568,
+      "shares": 1386636609,
+      "listing_date": "23-Aug-2000 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "NMDC": {
+      "free_float_pct": 39.21255860296702,
+      "shares": 8791817550,
+      "listing_date": "03-Mar-2008 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "NSLNISP": {
+      "free_float_pct": 39.19369176882337,
+      "shares": 2930605850,
+      "listing_date": "20-Feb-2023 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "NTPC": {
+      "free_float_pct": 48.75469999999985,
+      "shares": 9696666134,
+      "listing_date": "05-Nov-2004 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "NTPCGREEN": {
+      "free_float_pct": 10.999298744952581,
+      "shares": 8426329669,
+      "listing_date": "27-Nov-2024 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "NUVAMA": {
+      "free_float_pct": 42.23650000000146,
+      "shares": 183615547,
+      "listing_date": "26-Sep-2023 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "NUVOCO": {
+      "free_float_pct": 27.96861220767463,
+      "shares": 357156153,
+      "listing_date": "23-Aug-2021 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "NYKAA": {
+      "free_float_pct": 47.66902749212964,
+      "shares": 2864113943,
+      "listing_date": "10-Nov-2021 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "OBEROIRLTY": {
+      "free_float_pct": 32.27653051670828,
+      "shares": 363602237,
+      "listing_date": "20-Oct-2010 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "OFSS": {
+      "free_float_pct": 27.313199999999664,
+      "shares": 87083127,
+      "listing_date": "28-Jun-2002 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "OIL": {
+      "free_float_pct": 33.43630000000023,
+      "shares": 1626607791,
+      "listing_date": "30-Sep-2009 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "OLAELEC": {
+      "free_float_pct": 48.63680452164317,
+      "shares": 4628408313,
+      "listing_date": "09-Aug-2024 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "OLECTRA": {
+      "free_float_pct": 49.71982481864096,
+      "shares": 82080737,
+      "listing_date": "20-Mar-2002 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ONESOURCE": {
+      "free_float_pct": 68.40199999999903,
+      "shares": 114669991,
+      "listing_date": "24-Jan-2025 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ONGC": {
+      "free_float_pct": 30.792615698841942,
+      "shares": 12580279206,
+      "listing_date": "19-Jul-1995 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "PAGEIND": {
+      "free_float_pct": 56.41467804054019,
+      "shares": 11153874,
+      "listing_date": "16-Mar-2007 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "PARADEEP": {
+      "free_float_pct": 41.46179856477565,
+      "shares": 1038520250,
+      "listing_date": "27-May-2022 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "PATANJALI": {
+      "free_float_pct": 31.78893563119426,
+      "shares": 1088108595,
+      "listing_date": "24-Jan-2020 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "PAYTM": {
+      "free_float_pct": 65.53471446179164,
+      "shares": 641133110,
+      "listing_date": "18-Nov-2021 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "PCBL": {
+      "free_float_pct": 44.46950000000148,
+      "shares": 393462604,
+      "listing_date": "29-Mar-1995 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "PERSISTENT": {
+      "free_float_pct": 68.63739239361702,
+      "shares": 157750000,
+      "listing_date": "06-Apr-2010 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "PETRONET": {
+      "free_float_pct": 49.817700000001054,
+      "shares": 1500000088,
+      "listing_date": "26-Mar-2004 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "PFC": {
+      "free_float_pct": 43.99950000000024,
+      "shares": 3300101760,
+      "listing_date": "23-Feb-2007 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "PFIZER": {
+      "free_float_pct": 33.03199999999972,
+      "shares": 45747732,
+      "listing_date": "28-Apr-1999 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "PGEL": {
+      "free_float_pct": 56.367651340033134,
+      "shares": 286437608,
+      "listing_date": "26-Sep-2011 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "PHOENIXLTD": {
+      "free_float_pct": 52.18303265696992,
+      "shares": 357663719,
+      "listing_date": "23-Apr-2007 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "PIDILITIND": {
+      "free_float_pct": 30.35322823843629,
+      "shares": 1017790348,
+      "listing_date": "29-Mar-1995 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "PIIND": {
+      "free_float_pct": 53.23308708634672,
+      "shares": 151718118,
+      "listing_date": "15-Jun-2011 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "PINELABS": {
+      "free_float_pct": 18.792903561608206,
+      "shares": 1153858090,
+      "listing_date": "14-Nov-2025 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "PIRAMALFIN": {
+      "free_float_pct": 52.98647808457999,
+      "shares": 226677700,
+      "listing_date": "07-Nov-2025 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "PNB": {
+      "free_float_pct": 29.905856905459117,
+      "shares": 11492943268,
+      "listing_date": "24-Apr-2002 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "PNBHOUSING": {
+      "free_float_pct": 71.93420000000087,
+      "shares": 260589923,
+      "listing_date": "07-Nov-2016 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "POLICYBZR": {
+      "free_float_pct": 74.59146167984831,
+      "shares": 462694870,
+      "listing_date": "15-Nov-2021 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "POLYCAB": {
+      "free_float_pct": 35.397044794255535,
+      "shares": 150676618,
+      "listing_date": "16-Apr-2019 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "POLYMED": {
+      "free_float_pct": 37.57810000000249,
+      "shares": 101359490,
+      "listing_date": "07-Dec-2011 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "POONAWALLA": {
+      "free_float_pct": 40.339080075900505,
+      "shares": 880512194,
+      "listing_date": "27-Apr-2004 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "POWERGRID": {
+      "free_float_pct": 48.54582499075795,
+      "shares": 9300603819,
+      "listing_date": "05-Oct-2007 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "POWERINDIA": {
+      "free_float_pct": 28.450547302779842,
+      "shares": 44572363,
+      "listing_date": "30-Mar-2020 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "PPLPHARMA": {
+      "free_float_pct": 46.58750000000029,
+      "shares": 1331348130,
+      "listing_date": "19-Oct-2022 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "PREMIERENE": {
+      "free_float_pct": 26.097200000000914,
+      "shares": 453951510,
+      "listing_date": "03-Sep-2024 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "PRESTIGE": {
+      "free_float_pct": 39.05269999999983,
+      "shares": 430730232,
+      "listing_date": "27-Oct-2010 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "PTCIL": {
+      "free_float_pct": 40.25783813555199,
+      "shares": 14992549,
+      "listing_date": "09-Jun-2023 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "PVRINOX": {
+      "free_float_pct": 72.43369999999697,
+      "shares": 98199962,
+      "listing_date": "04-Jan-2006 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "PWL": {
+      "free_float_pct": 18.635044096305954,
+      "shares": 2900886652,
+      "listing_date": "18-Nov-2025 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "RADICO": {
+      "free_float_pct": 58.32825599173105,
+      "shares": 133982398,
+      "listing_date": "18-Jun-2003 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "RAILTEL": {
+      "free_float_pct": 27.15309999999717,
+      "shares": 320938407,
+      "listing_date": "26-Feb-2021 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "RAINBOW": {
+      "free_float_pct": 48.97901537024496,
+      "shares": 101566639,
+      "listing_date": "10-May-2022 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "RAMCOCEM": {
+      "free_float_pct": 53.31550563147619,
+      "shares": 236292380,
+      "listing_date": "09-Apr-1997 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "RBLBANK": {
+      "free_float_pct": 39.78852489572403,
+      "shares": 1550108105,
+      "listing_date": "31-Aug-2016 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "RECLTD": {
+      "free_float_pct": 47.30946273606638,
+      "shares": 2633224000,
+      "listing_date": "12-Mar-2008 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "REDINGTON": {
+      "free_float_pct": 75.78490000000077,
+      "shares": 781774431,
+      "listing_date": "15-Feb-2007 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "RELIANCE": {
+      "free_float_pct": 49.77800160231958,
+      "shares": 13532538722,
+      "listing_date": "29-Nov-1995 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "RHIM": {
+      "free_float_pct": 29.30643988111441,
+      "shares": 206501426,
+      "listing_date": "12-Mar-2012 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "RITES": {
+      "free_float_pct": 27.78817514447868,
+      "shares": 480603774,
+      "listing_date": "02-Jul-2018 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "RKFORGE": {
+      "free_float_pct": 56.50090583077853,
+      "shares": 182170017,
+      "listing_date": "05-May-2004 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "RPOWER": {
+      "free_float_pct": 69.88017726872265,
+      "shares": 4135770966,
+      "listing_date": "11-Feb-2008 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "RRKABEL": {
+      "free_float_pct": 29.01790000000138,
+      "shares": 113105505,
+      "listing_date": "20-Sep-2023 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "RVNL": {
+      "free_float_pct": 27.15064401576322,
+      "shares": 2085020100,
+      "listing_date": "11-Apr-2019 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "SAGILITY": {
+      "free_float_pct": 49.03877969732295,
+      "shares": 4681328413,
+      "listing_date": "12-Nov-2024 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "SAIL": {
+      "free_float_pct": 34.91152026990548,
+      "shares": 4130525289,
+      "listing_date": "06-Jul-1995 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "SAILIFE": {
+      "free_float_pct": 64.84180226881941,
+      "shares": 212313616,
+      "listing_date": "18-Dec-2024 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "SAMMAANCAP": {
+      "free_float_pct": 65.94009329597714,
+      "shares": 1161543321,
+      "listing_date": "23-Jul-2013 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "SAPPHIRE": {
+      "free_float_pct": 73.43389999999727,
+      "shares": 321382905,
+      "listing_date": "18-Nov-2021 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "SARDAEN": {
+      "free_float_pct": 26.0133615582116,
+      "shares": 352381270,
+      "listing_date": "03-Dec-2009 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "SAREGAMA": {
+      "free_float_pct": 37.36601030153599,
+      "shares": 192809490,
+      "listing_date": "30-Jul-1997 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "SBFC": {
+      "free_float_pct": 37.12818575137773,
+      "shares": 1108206715,
+      "listing_date": "16-Aug-2023 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "SBICARD": {
+      "free_float_pct": 31.07062651305647,
+      "shares": 951642492,
+      "listing_date": "16-Mar-2020 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "SBILIFE": {
+      "free_float_pct": 44.672423714155826,
+      "shares": 1003261050,
+      "listing_date": "03-Oct-2017 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "SBIN": {
+      "free_float_pct": 44.65878176239337,
+      "shares": 9230617586,
+      "listing_date": "01-Mar-1995 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "SCHAEFFLER": {
+      "free_float_pct": 25.679900000000522,
+      "shares": 156303670,
+      "listing_date": "29-Nov-2000 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "SCHNEIDER": {
+      "free_float_pct": 24.40916808324647,
+      "shares": 239104035,
+      "listing_date": "20-Mar-2012 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "SCI": {
+      "free_float_pct": 36.217377661979995,
+      "shares": 465799010,
+      "listing_date": "13-Aug-1997 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "SHREECEM": {
+      "free_float_pct": 36.96429999999994,
+      "shares": 36080748,
+      "listing_date": "26-Apr-1995 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "SHRIRAMFIN": {
+      "free_float_pct": 59.2576807171734,
+      "shares": 2352983543,
+      "listing_date": "11-Dec-1996 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "SHYAMMETL": {
+      "free_float_pct": 25.10561823231986,
+      "shares": 279131853,
+      "listing_date": "24-Jun-2021 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "SIEMENS": {
+      "free_float_pct": 24.76034110089941,
+      "shares": 356120505,
+      "listing_date": "06-Sep-1995 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "SIGNATURE": {
+      "free_float_pct": 27.805000000000607,
+      "shares": 140686026,
+      "listing_date": "27-Sep-2023 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "SJVN": {
+      "free_float_pct": 18.147839452473193,
+      "shares": 3929795175,
+      "listing_date": "20-May-2010 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "SOBHA": {
+      "free_float_pct": 41.524399999996945,
+      "shares": 106932806,
+      "listing_date": "20-Dec-2006 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "SOLARINDS": {
+      "free_float_pct": 26.8443999999999,
+      "shares": 90490055,
+      "listing_date": "03-Apr-2006 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "SONACOMS": {
+      "free_float_pct": 71.90370849074156,
+      "shares": 623890650,
+      "listing_date": "24-Jun-2021 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "SONATSOFTW": {
+      "free_float_pct": 69.06300000000097,
+      "shares": 280424816,
+      "listing_date": "28-Jul-1999 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "SPLPETRO": {
+      "free_float_pct": 33.391522142803346,
+      "shares": 188041342,
+      "listing_date": "24-May-2022 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "SRF": {
+      "free_float_pct": 48.86945019920334,
+      "shares": 296424825,
+      "listing_date": "18-Aug-2003 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "STARHEALTH": {
+      "free_float_pct": 39.746360491072636,
+      "shares": 588623619,
+      "listing_date": "10-Dec-2021 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "SUMICHEM": {
+      "free_float_pct": 24.52624633562955,
+      "shares": 499145736,
+      "listing_date": "27-Jan-2020 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "SUNDARMFIN": {
+      "free_float_pct": 61.81259999999953,
+      "shares": 111103860,
+      "listing_date": "07-Jan-1998 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "SUNPHARMA": {
+      "free_float_pct": 43.98573334724987,
+      "shares": 2399334970,
+      "listing_date": "08-Feb-1995 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "SUNTV": {
+      "free_float_pct": 24.9987000000017,
+      "shares": 394084620,
+      "listing_date": "24-Apr-2006 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "SUPREMEIND": {
+      "free_float_pct": 50.548717248321964,
+      "shares": 127026870,
+      "listing_date": "19-Jul-1995 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "SUZLON": {
+      "free_float_pct": 88.27609471205321,
+      "shares": 13745587012,
+      "listing_date": "19-Oct-2005 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "SWANCORP": {
+      "free_float_pct": 44.397123747499464,
+      "shares": 313456886,
+      "listing_date": "29-May-2012 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "SWIGGY": {
+      "free_float_pct": 51.345250008697654,
+      "shares": 2760313555,
+      "listing_date": "13-Nov-2024 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "SYNGENE": {
+      "free_float_pct": 46.9312089498967,
+      "shares": 403669147,
+      "listing_date": "11-Aug-2015 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "SYRMA": {
+      "free_float_pct": 40.2754956736721,
+      "shares": 192830485,
+      "listing_date": "26-Aug-2022 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "TARIL": {
+      "free_float_pct": 35.58236787623923,
+      "shares": 300165834,
+      "listing_date": "28-Dec-2007 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "TATACAP": {
+      "free_float_pct": 11.82519999999994,
+      "shares": 4244869037,
+      "listing_date": "13-Oct-2025 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "TATACHEM": {
+      "free_float_pct": 61.26537430987536,
+      "shares": 254756278,
+      "listing_date": "01-Apr-1999 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "TATACOMM": {
+      "free_float_pct": 41.08655497179205,
+      "shares": 285016749,
+      "listing_date": "12-Apr-1995 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "TATACONSUM": {
+      "free_float_pct": 65.63201619678307,
+      "shares": 989690012,
+      "listing_date": "18-Nov-1998 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "TATAELXSI": {
+      "free_float_pct": 55.097514561402804,
+      "shares": 62299561,
+      "listing_date": "17-Sep-2003 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "TATAINVEST": {
+      "free_float_pct": 25.723000000000123,
+      "shares": 505952960,
+      "listing_date": "24-Jun-1998 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "TATAPOWER": {
+      "free_float_pct": 52.0457610818124,
+      "shares": 3195339547,
+      "listing_date": "03-Apr-1996 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "TATASTEEL": {
+      "free_float_pct": 66.01996271884663,
+      "shares": 12483527171,
+      "listing_date": "18-Nov-1998 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "TATATECH": {
+      "free_float_pct": 42.21691819548774,
+      "shares": 406051830,
+      "listing_date": "30-Nov-2023 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "TBOTEK": {
+      "free_float_pct": 31.55610000000163,
+      "shares": 108587787,
+      "listing_date": "15-May-2024 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "TCS": {
+      "free_float_pct": 28.139800000000054,
+      "shares": 3618087518,
+      "listing_date": "25-Aug-2004 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "TECHM": {
+      "free_float_pct": 64.61980000000025,
+      "shares": 980084806,
+      "listing_date": "28-Aug-2006 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "TECHNOE": {
+      "free_float_pct": 43.026791415055484,
+      "shares": 116299574,
+      "listing_date": "04-Dec-2018 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "TEGA": {
+      "free_float_pct": 21.936199999996703,
+      "shares": 75127698,
+      "listing_date": "13-Dec-2021 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "TEJASNET": {
+      "free_float_pct": 46.27399999999703,
+      "shares": 177973982,
+      "listing_date": "27-Jun-2017 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "TENNIND": {
+      "free_float_pct": 22.457306038667962,
+      "shares": 403604309,
+      "listing_date": "19-Nov-2025 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "THELEELA": {
+      "free_float_pct": 24.097157533005852,
+      "shares": 333957878,
+      "listing_date": "02-Jun-2025 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "THERMAX": {
+      "free_float_pct": 32.440736554135675,
+      "shares": 119156300,
+      "listing_date": "30-Aug-1995 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "TIINDIA": {
+      "free_float_pct": 55.01680057351357,
+      "shares": 193572320,
+      "listing_date": "02-Nov-2017 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "TIMKEN": {
+      "free_float_pct": 47.55105784816579,
+      "shares": 75218734,
+      "listing_date": "06-Feb-2007 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "TITAGARH": {
+      "free_float_pct": 59.31775302504161,
+      "shares": 134673768,
+      "listing_date": "21-Apr-2008 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "TITAN": {
+      "free_float_pct": 46.362279086171085,
+      "shares": 887786160,
+      "listing_date": "24-Sep-2004 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "TMCV": {
+      "free_float_pct": 56.63474916148105,
+      "shares": 3682700304,
+      "listing_date": "12-Nov-2025 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "TMPV": {
+      "free_float_pct": 56.61645417466428,
+      "shares": 3683139553,
+      "listing_date": "22-Jul-1998 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "TORNTPHARM": {
+      "free_float_pct": 38.44551533197164,
+      "shares": 380367856,
+      "listing_date": "25-Nov-2002 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "TORNTPOWER": {
+      "free_float_pct": 37.6224465090091,
+      "shares": 503903543,
+      "listing_date": "28-Nov-2006 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "TRAVELFOOD": {
+      "free_float_pct": 13.805203117762833,
+      "shares": 131679484,
+      "listing_date": "14-Jul-2025 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "TRENT": {
+      "free_float_pct": 62.19915199727589,
+      "shares": 533232301,
+      "listing_date": "07-Jun-2004 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "TRIDENT": {
+      "free_float_pct": 24.45450000000382,
+      "shares": 5095955670,
+      "listing_date": "21-Feb-2001 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "TRITURBINE": {
+      "free_float_pct": 36.702406570553705,
+      "shares": 317894979,
+      "listing_date": "28-Oct-2011 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "TTML": {
+      "free_float_pct": 25.638199999999976,
+      "shares": 1954927727,
+      "listing_date": "20-Oct-2000 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "TVSMOTOR": {
+      "free_float_pct": 49.31726269387735,
+      "shares": 475087114,
+      "listing_date": "02-Aug-2000 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "UBL": {
+      "free_float_pct": 27.2383999999986,
+      "shares": 264405149,
+      "listing_date": "28-Jul-2008 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "UCOBANK": {
+      "free_float_pct": 9.048549730975353,
+      "shares": 12539558979,
+      "listing_date": "09-Oct-2003 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ULTRACEMCO": {
+      "free_float_pct": 40.045500000000104,
+      "shares": 294679171,
+      "listing_date": "24-Aug-2004 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "UNIONBANK": {
+      "free_float_pct": 25.232703821142678,
+      "shares": 7633605607,
+      "listing_date": "24-Sep-2002 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "UNITDSPR": {
+      "free_float_pct": 40.502421515955795,
+      "shares": 727350853,
+      "listing_date": "27-Sep-2001 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "UNOMINDA": {
+      "free_float_pct": 31.41253900936225,
+      "shares": 577558876,
+      "listing_date": "02-Feb-2007 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "UPL": {
+      "free_float_pct": 66.27557382216885,
+      "shares": 844169318,
+      "listing_date": "23-Jan-2004 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "URBANCO": {
+      "free_float_pct": 21.79721873967462,
+      "shares": 1542180603,
+      "listing_date": "17-Sep-2025 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "USHAMART": {
+      "free_float_pct": 59.616299999997814,
+      "shares": 304741780,
+      "listing_date": "11-Oct-2000 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "UTIAMC": {
+      "free_float_pct": 32.66076008405849,
+      "shares": 128538828,
+      "listing_date": "12-Oct-2020 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "VBL": {
+      "free_float_pct": 40.32096599241458,
+      "shares": 3382464894,
+      "listing_date": "08-Nov-2016 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "VEDL": {
+      "free_float_pct": 43.25245836816277,
+      "shares": 3910388057,
+      "listing_date": "13-May-1998 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "VIJAYA": {
+      "free_float_pct": 47.422596009958966,
+      "shares": 102997715,
+      "listing_date": "14-Sep-2021 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "VMM": {
+      "free_float_pct": 59.44120346212222,
+      "shares": 4684808639,
+      "listing_date": "18-Dec-2024 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "VOLTAS": {
+      "free_float_pct": 68.71519999999886,
+      "shares": 330884740,
+      "listing_date": "12-Apr-1995 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "VTL": {
+      "free_float_pct": 34.43641507087646,
+      "shares": 289475800,
+      "listing_date": "14-Jan-2003 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "WAAREEENER": {
+      "free_float_pct": 33.19888990400952,
+      "shares": 287651335,
+      "listing_date": "28-Oct-2024 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "WELCORP": {
+      "free_float_pct": 49.53702288888915,
+      "shares": 263790645,
+      "listing_date": "24-May-2005 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "WELSPUNLIV": {
+      "free_float_pct": 33.05273733179302,
+      "shares": 944752514,
+      "listing_date": "04-Dec-2003 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "WHIRLPOOL": {
+      "free_float_pct": 59.82519712793909,
+      "shares": 126871830,
+      "listing_date": "06-Apr-2010 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "WIPRO": {
+      "free_float_pct": 27.25867880916521,
+      "shares": 9904537399,
+      "listing_date": "08-Nov-1995 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "WOCKPHARMA": {
+      "free_float_pct": 50.66693141651124,
+      "shares": 162492169,
+      "listing_date": "23-Feb-2000 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "YESBANK": {
+      "free_float_pct": 55.80779999999965,
+      "shares": 31387602152,
+      "listing_date": "12-Jul-2005 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ZEEL": {
+      "free_float_pct": 95.29169194100852,
+      "shares": 960519420,
+      "listing_date": "09-Sep-1998 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ZENSARTECH": {
+      "free_float_pct": 49.985714692143674,
+      "shares": 227555022,
+      "listing_date": "09-Jul-2003 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ZENTEC": {
+      "free_float_pct": 50.90652611979848,
+      "shares": 90290356,
+      "listing_date": "30-Mar-2015 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ZFCVINDIA": {
+      "free_float_pct": 39.726910187287366,
+      "shares": 113805504,
+      "listing_date": "01-Oct-2008 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ZYDUSLIFE": {
+      "free_float_pct": 24.783081524663885,
+      "shares": 997503832,
+      "listing_date": "18-Apr-2000 00:00:00",
+      "_as_of_date": "2026-09-30"
+    },
+    "ZYDUSWELL": {
+      "free_float_pct": 30.18244663291853,
+      "shares": 318160720,
+      "listing_date": "13-Nov-2009 00:00:00",
+      "_as_of_date": "2026-09-30"
+    }
+  }
+}
