@@ -86,13 +86,11 @@ def main():
         print(f"ERROR: {baseline_path} not found - cannot determine current "
               f"constituents. See README.")
         sys.exit(1)
-    baseline = pd.read_csv(baseline_path)
-    baseline["isin_norm"] = baseline["isin"].astype(str).str.strip().str.upper()
-    baseline["name_norm"] = baseline["name"].map(normalize_name)
+    baseline_isins, baseline_names = _load_constituent_baseline(
+        str(baseline_path), universe_df)
 
     result = engine.predict(review_date, panel["review_date"].max(),
-                            set(baseline["isin_norm"]),
-                            set(n for n in baseline["name_norm"] if n))
+                            baseline_isins, baseline_names)
     if result is None:
         print("ERROR: could not build a universe for this review date.")
         sys.exit(1)
@@ -158,6 +156,140 @@ def _build_panel_from_cache(nse_cache_path, vol_df, review_date):
     panel["name"] = panel["symbol"].map(name_map).fillna(panel["symbol"])
     panel["isin_norm"] = panel["symbol"].map(isin_map).fillna(panel["symbol"])
     return panel
+
+
+def _fuzzy_normalize(name):
+    """Lighter than normalize_name() - strips only unambiguous suffixes,
+    leaves the rest for the containment scorer to handle. Deliberately
+    conservative, matching the approach already validated once in this
+    project at 96% match rate."""
+    import re
+    if not isinstance(name, str):
+        return frozenset()
+    name = _NAME_ALIASES.get(name.strip().upper(), name.upper())
+    words = re.findall(r"[A-Z0-9]+", name)
+    stop = {"LTD", "LIMITED", "PLC", "INC", "CO", "COMPANY", "CORP",
+           "CORPORATION", "THE", "AND", "OF", "INDIA", "INDIAN", "NEW"}
+    core = [w for w in words if w not in stop]
+    return frozenset(core or words)
+
+
+# Known company renames that no name-similarity algorithm can bridge -
+# confirmed during earlier work on this exact project (comparing FTSE's
+# constituent file against the Nifty 500 universe). Extend this list if
+# a future run reports an unmatched name that turns out to be a rename.
+_NAME_ALIASES = {
+    "ETERNAL": "ZOMATO",
+    "LODHA DEVELOPERS": "MACROTECH DEVELOPERS",
+    "GE VERNOVA T&D INDIA": "GE T&D INDIA",
+}
+
+
+def _fuzzy_match_name(target_name, candidate_names_normalized, threshold=0.5):
+    """candidate_names_normalized: dict {original_name: frozenset_tokens}.
+    Returns the best-matching original name, or None if nothing clears
+    the threshold. Containment score (how much of the SHORTER token set
+    is covered) handles cases like 'Titan' vs 'Titan Company', which
+    plain Jaccard similarity scores too low."""
+    from difflib import SequenceMatcher
+    target_tokens = _fuzzy_normalize(target_name)
+    if not target_tokens:
+        return None, 0.0
+    best_name, best_score = None, 0.0
+    for cand_name, cand_tokens in candidate_names_normalized.items():
+        if not cand_tokens:
+            continue
+        overlap = len(target_tokens & cand_tokens)
+        containment = overlap / min(len(target_tokens), len(cand_tokens))
+        jaccard = overlap / len(target_tokens | cand_tokens)
+        score = max(containment * 0.9, jaccard)
+        if score > best_score:
+            best_name, best_score = cand_name, score
+    return (best_name, best_score) if best_score >= threshold else (None, best_score)
+
+
+def _load_constituent_baseline(baseline_path, universe_df):
+    """Handles TWO file formats for the constituent baseline:
+
+    1. The simple format this project was designed around:
+       columns literally named 'isin' and 'name'.
+
+    2. FTSE's own raw constituent export (e.g. downloaded directly from
+       research.ftserussell.com) - has 'Cons code', 'Constituent name',
+       SEDOL, CUSIP, but NO ISIN (and SEDOL-to-ISIN conversion is NOT
+       valid for Indian securities - that formula only works for UK/
+       Ireland, where ISIN is structurally derived from SEDOL by
+       definition; Indian ISINs are assigned independently by NSDL).
+       So ISIN is derived by FUZZY matching 'Constituent name' against
+       eligible_universe.csv's 'Company Name' - the same containment-
+       scoring approach already validated once in this project at a
+       96% match rate, plus a small alias table for known renames that
+       no similarity algorithm can bridge (e.g. Zomato -> Eternal).
+
+    Returns (isin_norm_set, name_norm_set).
+    """
+    raw = pd.read_csv(baseline_path, header=None, dtype=str)
+
+    first_row = [str(c).strip().lower() for c in raw.iloc[0].tolist()]
+    if "isin" in first_row and "name" in first_row:
+        df = pd.read_csv(baseline_path)
+        isins = set(df["isin"].astype(str).str.strip().str.upper())
+        names = set(n for n in df["name"].map(normalize_name) if n)
+        return isins, names
+
+    header_row_idx = None
+    for i in range(min(10, len(raw))):
+        row_vals = [str(c).strip() for c in raw.iloc[i].tolist()]
+        if "Cons code" in row_vals:
+            header_row_idx = i
+            break
+    if header_row_idx is None:
+        raise ValueError(
+            f"{baseline_path} does not match either expected format "
+            f"(simple isin/name columns, or FTSE's raw export with a "
+            f"'Cons code' header row). Check the file manually.")
+
+    df = pd.read_csv(baseline_path, header=header_row_idx)
+    df = df[df["Cons code"].notna()].copy()
+    print(f"  detected FTSE raw export format: {len(df)} constituents, "
+          f"fuzzy-matching against eligible_universe.csv (ISIN cannot be "
+          f"derived from SEDOL for Indian securities)")
+
+    universe_df = universe_df.copy()
+    universe_names = {row["Company Name"]: _fuzzy_normalize(row["Company Name"])
+                      for _, row in universe_df.iterrows()}
+    isin_by_universe_name = dict(zip(universe_df["Company Name"],
+                                     universe_df["ISIN Code"].astype(str)
+                                     .str.strip().str.upper()))
+
+    matched_isins, unmatched_names, low_confidence = [], [], []
+    for _, row in df.iterrows():
+        best_name, score = _fuzzy_match_name(row["Constituent name"], universe_names)
+        if best_name is not None:
+            matched_isins.append(isin_by_universe_name[best_name])
+            if score < 0.8:
+                low_confidence.append((row["Constituent name"], best_name, round(score, 2)))
+        else:
+            unmatched_names.append(row["Constituent name"])
+
+    print(f"  matched {len(matched_isins)} of {len(df)} via fuzzy name match")
+    if low_confidence:
+        print(f"  {len(low_confidence)} matched with LOWER confidence (score < 0.8) - "
+              f"worth spot-checking these:")
+        for orig, matched, score in low_confidence[:10]:
+            print(f"    '{orig}' -> '{matched}' (score {score})")
+    if unmatched_names:
+        print(f"  {len(unmatched_names)} names had NO match above threshold - "
+              f"these will be excluded from the constituent baseline entirely, "
+              f"meaning the model may wrongly predict them as new additions:")
+        for nm in unmatched_names[:15]:
+            print(f"    - {nm}")
+        print(f"  If any of these are renamed companies, add them to "
+              f"_NAME_ALIASES in this script and re-run.")
+
+    isins = set(matched_isins)
+    names = set(n for n in df["Constituent name"].map(normalize_name) if n)
+    return isins, names
 
 
 if __name__ == "__main__":
