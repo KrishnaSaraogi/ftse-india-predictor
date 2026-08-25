@@ -4,18 +4,28 @@ Fully automated prediction run. Refreshes data, predicts, appends to
 the permanent workbook. No manual steps.
 
 USAGE
-    python scripts/run_prediction.py --review-date 2026-09-30 [--refresh-nse]
+    python scripts/run_prediction.py [--review-date 2026-09-30] [--refresh-nse]
 
---refresh-nse is only passed on the ~quarterly slow-refresh runs (see
-predict.yml) - NSE free float/shares/listing barely change within a
-quarter, so refreshing it on every single run would triple NSE risk
-exposure for no real benefit. Volume ALWAYS refreshes (incremental,
-cheap, needed for the liquidity test to stay current).
+--review-date is OPTIONAL and rarely needed - the target review is
+normally DERIVED from the constituent baseline's own effective date
+(baseline quarter + 1). Passing it explicitly overrides that, but will
+be immediately overridden right back if it doesn't match what the
+baseline can actually support - see the override logic below. This
+exists mainly for manual testing, not routine use.
+
+--refresh-nse forces an NSE refresh regardless of cache age. Normally
+this decides itself: NSE free float/shares/listing barely change
+within a quarter, so the cache is only refreshed if it's more than
+~75 days old, based on ANY scheduled run noticing staleness - not tied
+to a specific calendar day, since the schedule now runs twice a month
+year-round rather than only near cut-off dates.
 """
 
 import argparse
+import os
 import re
 import sys
+import time
 from pathlib import Path
 
 import pandas as pd
@@ -30,17 +40,21 @@ from ftse_predictor.report import (append_prediction, apply_formatting,
 
 DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 WORKBOOK_PATH = Path(__file__).resolve().parent.parent / "outputs" / "rebalancing_predictions.xlsx"
+NSE_REFRESH_MAX_AGE_DAYS = 75   # ~ a quarter - NSE shareholding filings
+                                # are themselves quarterly, so refreshing
+                                # more often than this buys nothing
 
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--review-date", required=True)
+    ap.add_argument("--review-date", default=None,
+                    help="optional override - normally derived from the "
+                         "baseline's own date instead")
     ap.add_argument("--refresh-nse", action="store_true",
-                    help="also refresh NSE free float/shares/listing data "
-                         "(slow-cadence, ~quarterly)")
+                    help="force an NSE refresh regardless of cache age")
     args = ap.parse_args()
 
-    review_date = pd.Timestamp(args.review_date)
+    review_date = pd.Timestamp(args.review_date) if args.review_date else None
     health_log = DataHealthLog()
 
     universe_path = DATA_DIR / "eligible_universe.csv"
@@ -70,17 +84,25 @@ def main():
     # were current going into September.
     if baseline_as_of is not None:
         derived_review = _next_quarter_end(baseline_as_of)
-        if derived_review != review_date:
+        if review_date is None:
+            print(f"Baseline reflects data as of {baseline_as_of.date()} - "
+                  f"predicting the next review: {derived_review.date()}.")
+            review_date = derived_review
+        elif derived_review != review_date:
             print(f"NOTE: baseline reflects data as of {baseline_as_of.date()}. "
                   f"Overriding the requested review date "
                   f"({review_date.date()}) with the review this baseline can "
                   f"actually support: {derived_review.date()}.")
             review_date = derived_review
+    elif review_date is None:
+        print("ERROR: could not determine what quarter the baseline "
+              "represents, and no --review-date was given to fall back on. "
+              "Cannot proceed safely.")
+        sys.exit(1)
     else:
         print("WARNING: could not determine what quarter the baseline "
-              "represents - using the requested/calendar-derived review "
-              "date as-is. This may silently mispredict if the baseline "
-              "is stale. Investigate before trusting this run's output.")
+              "represents - using the explicitly-provided review date "
+              "as-is. This may mispredict if the baseline is stale.")
 
     # ---- volume: always refresh, incremental ----
     print("Refreshing volume panel (incremental)...")
@@ -89,15 +111,25 @@ def main():
     vol_df.to_csv(volume_panel_path, index=False)
     print(f"  {len(vol_df):,} total rows in volume panel")
 
-    # ---- NSE: only on slow-cadence runs ----
+    # ---- NSE: refresh only if the cache is genuinely stale, not tied to
+    # any particular calendar day (the schedule now runs twice a month
+    # year-round, not just near cut-off dates) ----
     nse_cache_path = DATA_DIR / "nse_cache.json"
-    must_refresh = args.refresh_nse or not nse_cache_path.exists()
+    cache_age_days = None
+    if nse_cache_path.exists():
+        cache_age_days = (time.time() - os.path.getmtime(nse_cache_path)) / 86400
+    must_refresh = (args.refresh_nse or cache_age_days is None or
+                    cache_age_days > NSE_REFRESH_MAX_AGE_DAYS)
     if must_refresh:
-        print("Refreshing NSE data (free float, shares, listing dates)...")
+        reason = ("forced" if args.refresh_nse else
+                  "no cache yet" if cache_age_days is None else
+                  f"cache is {cache_age_days:.0f} days old")
+        print(f"Refreshing NSE data (free float, shares, listing dates) - {reason}...")
         refresh_nse_data(symbols, str(nse_cache_path), health_log,
                          as_of_date=str(review_date.date()))
     else:
-        print("Skipping NSE refresh (not a slow-cadence run) - using cache")
+        print(f"Skipping NSE refresh - cache is only {cache_age_days:.0f} days "
+              f"old (refreshes past {NSE_REFRESH_MAX_AGE_DAYS} days)")
 
     if health_log.has_issues:
         print(f"\n{len(health_log.events)} data health issues this run:")
