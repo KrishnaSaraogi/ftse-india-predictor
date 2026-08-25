@@ -25,7 +25,8 @@ from ftse_predictor import CONFIG, ListingDates, LiquiditySource, PredictionEngi
 from ftse_predictor.data_health import DataHealthLog
 from ftse_predictor.fetchers import refresh_nse_data, refresh_volume_panel
 from ftse_predictor.universe import normalize_name
-from ftse_predictor.report import append_prediction, apply_formatting, write_health_warning
+from ftse_predictor.report import (append_prediction, apply_formatting,
+                                   write_health_warning, annotate_summary_data_warning)
 
 DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 WORKBOOK_PATH = Path(__file__).resolve().parent.parent / "outputs" / "rebalancing_predictions.xlsx"
@@ -122,6 +123,7 @@ def main():
     append_prediction(str(WORKBOOK_PATH), result)
     if health_log.has_issues:
         write_health_warning(str(WORKBOOK_PATH), health_log)
+        annotate_summary_data_warning(str(WORKBOOK_PATH), review_date)
     apply_formatting(str(WORKBOOK_PATH))
     print(f"\nAppended to {WORKBOOK_PATH}")
 
