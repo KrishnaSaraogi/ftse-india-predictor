@@ -52,6 +52,35 @@ def main():
     universe_df = pd.read_csv(universe_path)
     symbols = universe_df["Symbol"].astype(str).str.strip().tolist()
 
+    baseline_path = DATA_DIR / "constituents_baseline.csv"
+    if not baseline_path.exists():
+        print(f"ERROR: {baseline_path} not found - cannot determine current "
+              f"constituents. See README.")
+        sys.exit(1)
+    baseline_isins, baseline_names, baseline_as_of = _load_constituent_baseline(
+        str(baseline_path), universe_df)
+
+    # THE FIX: predict the review immediately AFTER whatever quarter the
+    # baseline actually represents - never trust the workflow's
+    # calendar-guessed date, which has no idea what quarter the loaded
+    # data reflects. Using today's date instead of the baseline's date
+    # caused real June 2026 additions to be silently re-predicted as
+    # "September" candidates, since March data was being used as if it
+    # were current going into September.
+    if baseline_as_of is not None:
+        derived_review = _next_quarter_end(baseline_as_of)
+        if derived_review != review_date:
+            print(f"NOTE: baseline reflects data as of {baseline_as_of.date()}. "
+                  f"Overriding the requested review date "
+                  f"({review_date.date()}) with the review this baseline can "
+                  f"actually support: {derived_review.date()}.")
+            review_date = derived_review
+    else:
+        print("WARNING: could not determine what quarter the baseline "
+              "represents - using the requested/calendar-derived review "
+              "date as-is. This may silently mispredict if the baseline "
+              "is stale. Investigate before trusting this run's output.")
+
     # ---- volume: always refresh, incremental ----
     print("Refreshing volume panel (incremental)...")
     volume_panel_path = DATA_DIR / "daily_volume_panel.csv"
@@ -81,14 +110,6 @@ def main():
     liquidity = LiquiditySource(str(volume_panel_path))
     engine = PredictionEngine(panel, listing_dates, liquidity)
 
-    baseline_path = DATA_DIR / "constituents_baseline.csv"
-    if not baseline_path.exists():
-        print(f"ERROR: {baseline_path} not found - cannot determine current "
-              f"constituents. See README.")
-        sys.exit(1)
-    baseline_isins, baseline_names = _load_constituent_baseline(
-        str(baseline_path), universe_df)
-
     result = engine.predict(review_date, panel["review_date"].max(),
                             baseline_isins, baseline_names)
     if result is None:
@@ -103,21 +124,6 @@ def main():
         write_health_warning(str(WORKBOOK_PATH), health_log)
     apply_formatting(str(WORKBOOK_PATH))
     print(f"\nAppended to {WORKBOOK_PATH}")
-
-    # log for update_backtest.py to score later
-    pending_path = Path(__file__).resolve().parent.parent / "outputs" / "pending_predictions.csv"
-    isin_by_symbol = dict(zip(panel["symbol"], panel["isin_norm"])) if "isin_norm" in panel.columns else {}
-    pending_row = pd.DataFrame([{
-        "review_date": review_date.date(), "quarter_type": result.quarter_type,
-        "predicted_add_symbols": ";".join(result.adds["symbol"]) if len(result.adds) else "",
-        "predicted_remove_symbols": ";".join(result.removes["symbol"]) if len(result.removes) else "",
-    }])
-    if pending_path.exists():
-        existing = pd.read_csv(pending_path)
-        existing = existing[existing["review_date"] != str(review_date.date())]
-        pending_row = pd.concat([existing, pending_row], ignore_index=True)
-    pending_path.parent.mkdir(parents=True, exist_ok=True)
-    pending_row.to_csv(pending_path, index=False)
 
 
 def _build_panel_from_cache(nse_cache_path, vol_df, review_date):
@@ -208,34 +214,60 @@ def _fuzzy_match_name(target_name, candidate_names_normalized, threshold=0.5):
     return (best_name, best_score) if best_score >= threshold else (None, best_score)
 
 
+def _next_quarter_end(date):
+    """The FTSE review quarter-end immediately after the given date."""
+    date = pd.Timestamp(date)
+    quarter_ends = [3, 6, 9, 12]
+    for m in quarter_ends:
+        candidate = pd.Timestamp(year=date.year, month=m, day=1) + pd.offsets.MonthEnd(0)
+        if candidate > date:
+            return candidate
+    return pd.Timestamp(year=date.year + 1, month=3, day=31)
+
+
+def _nearest_quarter_end(date):
+    """Rounds a raw file date (e.g. an FTSE export's header date) to the
+    nearest quarter-end, since export dates land a few days around the
+    actual review effective date, not exactly on the quarter-end."""
+    date = pd.Timestamp(date)
+    candidates = []
+    for year_offset in (-1, 0, 1):
+        for m in (3, 6, 9, 12):
+            candidates.append(pd.Timestamp(year=date.year + year_offset, month=m, day=1)
+                             + pd.offsets.MonthEnd(0))
+    return min(candidates, key=lambda c: abs((c - date).days))
+
+
 def _load_constituent_baseline(baseline_path, universe_df):
     """Handles TWO file formats for the constituent baseline:
 
-    1. The simple format this project was designed around:
-       columns literally named 'isin' and 'name'.
+    1. The simple format this project was designed around: columns
+       literally named 'isin' and 'name', optionally 'as_of_date'
+       (written automatically by update_backtest.py once real N-PORT
+       data has been ingested at least once).
 
     2. FTSE's own raw constituent export (e.g. downloaded directly from
        research.ftserussell.com) - has 'Cons code', 'Constituent name',
-       SEDOL, CUSIP, but NO ISIN (and SEDOL-to-ISIN conversion is NOT
-       valid for Indian securities - that formula only works for UK/
-       Ireland, where ISIN is structurally derived from SEDOL by
-       definition; Indian ISINs are assigned independently by NSDL).
-       So ISIN is derived by FUZZY matching 'Constituent name' against
-       eligible_universe.csv's 'Company Name' - the same containment-
-       scoring approach already validated once in this project at a
-       96% match rate, plus a small alias table for known renames that
-       no similarity algorithm can bridge (e.g. Zomato -> Eternal).
+       SEDOL, CUSIP, but NO ISIN (SEDOL-to-ISIN conversion is NOT valid
+       for Indian securities - see comment below). ISIN is derived by
+       FUZZY matching 'Constituent name' against eligible_universe.csv,
+       and the file's own header date is extracted to determine what
+       quarter this snapshot represents.
 
-    Returns (isin_norm_set, name_norm_set).
+    Returns (isin_norm_set, name_norm_set, baseline_as_of_date_or_None).
     """
-    raw = pd.read_csv(baseline_path, header=None, dtype=str)
+    raw = pd.read_csv(baseline_path, header=None, dtype=str,
+                      engine="python", on_bad_lines="skip")
 
     first_row = [str(c).strip().lower() for c in raw.iloc[0].tolist()]
     if "isin" in first_row and "name" in first_row:
         df = pd.read_csv(baseline_path)
         isins = set(df["isin"].astype(str).str.strip().str.upper())
         names = set(n for n in df["name"].map(normalize_name) if n)
-        return isins, names
+        as_of = None
+        if "as_of_date" in df.columns and df["as_of_date"].notna().any():
+            as_of = pd.Timestamp(df["as_of_date"].dropna().iloc[0])
+        return isins, names, as_of
 
     header_row_idx = None
     for i in range(min(10, len(raw))):
@@ -249,11 +281,35 @@ def _load_constituent_baseline(baseline_path, universe_df):
             f"(simple isin/name columns, or FTSE's raw export with a "
             f"'Cons code' header row). Check the file manually.")
 
+    # extract the file's own header date (e.g. "25/03/2026") from the
+    # rows before the actual data header - this tells us what quarter
+    # the snapshot represents, independent of wall-clock "today"
+    as_of = None
+    date_pattern = re.compile(r"(\d{1,2})/(\d{1,2})/(\d{4})")
+    for i in range(header_row_idx):
+        for cell in raw.iloc[i].tolist():
+            if not isinstance(cell, str):
+                continue
+            m = date_pattern.search(cell)
+            if m:
+                day, month, year = (int(x) for x in m.groups())
+                try:
+                    file_date = pd.Timestamp(year=year, month=month, day=day)
+                    as_of = _nearest_quarter_end(file_date)
+                except ValueError:
+                    continue
+                break
+        if as_of is not None:
+            break
+
     df = pd.read_csv(baseline_path, header=header_row_idx)
     df = df[df["Cons code"].notna()].copy()
-    print(f"  detected FTSE raw export format: {len(df)} constituents, "
-          f"fuzzy-matching against eligible_universe.csv (ISIN cannot be "
-          f"derived from SEDOL for Indian securities)")
+    print(f"  detected FTSE raw export format: {len(df)} constituents"
+         + (f", representing the {as_of.date()} review" if as_of is not None
+            else " (could not determine which review this represents from "
+                 "the file header)")
+         + ", fuzzy-matching against eligible_universe.csv "
+           "(ISIN cannot be derived from SEDOL for Indian securities)")
 
     universe_df = universe_df.copy()
     universe_names = {row["Company Name"]: _fuzzy_normalize(row["Company Name"])
@@ -289,7 +345,7 @@ def _load_constituent_baseline(baseline_path, universe_df):
 
     isins = set(matched_isins)
     names = set(n for n in df["Constituent name"].map(normalize_name) if n)
-    return isins, names
+    return isins, names, as_of
 
 
 if __name__ == "__main__":
