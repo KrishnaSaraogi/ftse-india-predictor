@@ -157,7 +157,7 @@ def update_outcomes(workbook_path, review_date, raw_add_isins, raw_remove_isins,
     for row in pred_ws.iter_rows(min_row=2):
         if row[date_i].value is None:
             continue
-        if str(pd.Timestamp(row[date_i].value).date()) != review_str:
+        if _safe_date_str(row[date_i].value) != review_str:
             continue
         pending_this_date.append(row)
         rows_to_delete.append(row[0].row)
@@ -212,7 +212,7 @@ def update_outcomes(workbook_path, review_date, raw_add_isins, raw_remove_isins,
     headers = [c.value for c in summary_ws[1]]
     date_i2 = headers.index("Review Date")
     for row in summary_ws.iter_rows(min_row=2):
-        if row[date_i2].value and str(pd.Timestamp(row[date_i2].value).date()) == review_str:
+        if row[date_i2].value and _safe_date_str(row[date_i2].value) == review_str:
             row[headers.index("Adds Actual")].value = \
                 stats["adds_caught"] + stats["adds_missed"]
             row[headers.index("Adds Caught")].value = stats["adds_caught"]
@@ -227,26 +227,62 @@ def update_outcomes(workbook_path, review_date, raw_add_isins, raw_remove_isins,
     return stats
 
 
+def _ensure_health_log_sheet(wb):
+    if "Data Health Log" in wb.sheetnames:
+        return wb["Data Health Log"]
+    ws = wb.create_sheet("Data Health Log")
+    ws.append(["Timestamp", "Source", "Symbol", "Reason", "Fell Back To Date"])
+    return ws
+
+
 def write_health_warning(workbook_path, health_log):
-    """If any data fell back to last-known-good this run, write an
-    unmissable warning at the top of the Summary sheet - big, red,
-    plain language, designed to be obvious with no technical
-    background needed to understand it."""
+    """Records data-health events on their OWN sheet - never inserts
+    rows into Summary, which would shift every row down and silently
+    break every function that assumes the header sits at row 1 (this
+    happened once during development: an inserted warning banner made
+    a LATER run crash trying to parse the banner text as a date).
+
+    Also annotates the Quarter Type text of the matching Summary row
+    for extra visibility, without disturbing row structure - just a
+    text edit to one existing cell."""
     if not health_log.has_issues:
         return
     wb = load_workbook(workbook_path)
-    ws = wb["Summary"]
-    ws.insert_rows(1, amount=2)
-    ws["A1"] = ("WARNING: some data could not be refreshed this run and "
-               "OLDER data was used instead. This prediction may be less "
-               "reliable than usual. Details below.")
-    ws["A1"].fill = WARNING_FILL
-    ws["A1"].font = WARNING_FONT
-    ws.merge_cells("A1:I1")
-    ws["A2"] = " | ".join(health_log.summary_lines())
-    ws["A2"].font = Font(name=FONT_NAME, italic=True, color="CC0000")
-    ws.merge_cells("A2:I2")
+    log_ws = _ensure_health_log_sheet(wb)
+    for event in health_log.events:
+        log_ws.append([event.timestamp, event.source, event.symbol,
+                       event.reason, event.fell_back_to_date])
     wb.save(workbook_path)
+
+
+def annotate_summary_data_warning(workbook_path, review_date):
+    """Marks the Summary row for this review date as having had a data
+    health issue, WITHOUT inserting or shifting any rows - just edits
+    the existing Quarter Type cell's text."""
+    wb = load_workbook(workbook_path)
+    ws = wb["Summary"]
+    headers = [c.value for c in ws[1]]
+    date_i = headers.index("Review Date")
+    qtype_i = headers.index("Quarter Type")
+    review_str = str(pd.Timestamp(review_date).date())
+    for row in ws.iter_rows(min_row=2):
+        cell = row[date_i]
+        if cell.value and _safe_date_str(cell.value) == review_str:
+            current = row[qtype_i].value or ""
+            if "[DATA WARNING" not in current:
+                row[qtype_i].value = f"{current} [DATA WARNING - see Data Health Log]"
+            break
+    wb.save(workbook_path)
+
+
+def _safe_date_str(value):
+    """Never let an unexpected non-date value in a date column crash
+    the whole run - returns None instead of raising, so callers can
+    just skip that row rather than fail unattended."""
+    try:
+        return str(pd.Timestamp(value).date())
+    except (ValueError, TypeError):
+        return None
 
 
 def _delete_rows_matching(ws, col_index, value):
@@ -254,7 +290,7 @@ def _delete_rows_matching(ws, col_index, value):
     to_delete = []
     for row in ws.iter_rows(min_row=2):
         cell = row[col_index - 1]
-        if cell.value and str(pd.Timestamp(cell.value).date()) == value_str:
+        if cell.value and _safe_date_str(cell.value) == value_str:
             to_delete.append(cell.row)
     for r in reversed(to_delete):
         ws.delete_rows(r)
@@ -265,7 +301,8 @@ def apply_formatting(workbook_path):
     preserve conditional formatting across programmatic row inserts, so
     this is re-run at the end of every update."""
     wb = load_workbook(workbook_path)
-    for name in ("Summary", "Predictions", "Adds Detail", "Removes Detail"):
+    for name in ("Summary", "Predictions", "Adds Detail", "Removes Detail",
+                "Data Health Log"):
         if name not in wb.sheetnames:
             continue
         ws = wb[name]
