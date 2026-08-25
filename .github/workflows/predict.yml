@@ -4,18 +4,22 @@ on:
   workflow_dispatch:
     inputs:
       review_date:
-        description: "Review date to predict, e.g. 2026-09-30 (leave blank to auto-detect)"
+        description: "Review date to predict, e.g. 2026-09-30 (leave blank to auto-detect from baseline)"
         required: false
       refresh_nse:
-        description: "Also refresh NSE data (free float/shares/listing)?"
+        description: "Force NSE refresh regardless of cache age?"
         type: boolean
         default: false
   schedule:
-    # 3 runs after each cut-off (31 Jan / 30 Apr / 31 Jul / 31 Oct):
-    # day 3 (first attempt), day 10 and day 17 (safety net for late data)
-    - cron: "0 6 3 2,5,8,11 *"
-    - cron: "0 6 10 2,5,8,11 *"
-    - cron: "0 6 17 2,5,8,11 *"
+    # 1st and 20th of EVERY month. Two purposes:
+    #  - catches a newly-rolled-forward baseline within ~10 days of it
+    #    landing (update_backtest.yml runs 1st/15th), rather than
+    #    waiting for a narrow once-a-quarter window
+    #  - the 1st-of-month runs land within a day of every cut-off date
+    #    (31 Jan/30 Apr/31 Jul/31 Oct), serving as the original
+    #    late-data safety net too - this schedule subsumes both jobs
+    - cron: "0 6 1 * *"
+    - cron: "0 6 20 * *"
 
 permissions:
   contents: write
@@ -33,50 +37,30 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Determine review date and NSE refresh flag
-        id: params
-        run: |
-          python - <<'PY'
-          import datetime, os
-
-          manual_date = "${{ github.event.inputs.review_date }}"
-          manual_refresh = "${{ github.event.inputs.refresh_nse }}"
-
-          if manual_date:
-              review_date = manual_date
-          else:
-              today = datetime.date.today()
-              cutoff_to_review = {1: 3, 4: 6, 7: 9, 10: 12}
-              review_month = cutoff_to_review.get(today.month)
-              if review_month is None:
-                  # not a scheduled month - default to the next upcoming review
-                  review_month = min(m for m in (3, 6, 9, 12) if m >= today.month) \
-                      if today.month <= 12 else 3
-              year = today.year if review_month >= today.month else today.year + 1
-              last_day = {3: 31, 6: 30, 9: 30, 12: 31}[review_month]
-              review_date = f"{year}-{review_month:02d}-{last_day}"
-
-          # NSE refreshes on the FIRST scheduled run of each quarter (day 3),
-          # or whenever explicitly requested via manual dispatch
-          today = datetime.date.today()
-          is_first_run_of_quarter = today.day <= 5
-          refresh_nse = manual_refresh == "true" or is_first_run_of_quarter
-
-          with open(os.environ["GITHUB_OUTPUT"], "a") as f:
-              f.write(f"review_date={review_date}\n")
-              f.write(f"refresh_nse={'--refresh-nse' if refresh_nse else ''}\n")
-          PY
-
       - name: Run prediction
         run: |
-          python scripts/run_prediction.py \
-            --review-date "${{ steps.params.outputs.review_date }}" \
-            ${{ steps.params.outputs.refresh_nse }}
+          python - <<'PY'
+          import os
+          import subprocess
+
+          cmd = ["python", "scripts/run_prediction.py"]
+
+          review_date = "${{ github.event.inputs.review_date }}"
+          if review_date:
+              cmd += ["--review-date", review_date]
+
+          if "${{ github.event.inputs.refresh_nse }}" == "true":
+              cmd += ["--refresh-nse"]
+
+          print("Running:", " ".join(cmd))
+          result = subprocess.run(cmd)
+          raise SystemExit(result.returncode)
+          PY
 
       - name: Commit results
         run: |
           git config user.name "ftse-predictor-bot"
           git config user.email "actions@github.com"
           git add data/ outputs/
-          git diff --quiet --cached || git commit -m "Prediction for ${{ steps.params.outputs.review_date }} ($(date -u +%Y-%m-%d))"
+          git diff --quiet --cached || git commit -m "Prediction run ($(date -u +%Y-%m-%d))"
           git push
