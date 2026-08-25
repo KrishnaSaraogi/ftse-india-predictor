@@ -3,9 +3,13 @@ name: Update backtest with real N-PORT data
 on:
   workflow_dispatch: {}
   schedule:
-    # first of every month - checks whether a new N-PORT filing has
-    # appeared for any of the last 3 quarter-ends
+    # 1st and 15th of every month - checks whether a new N-PORT filing
+    # has appeared. Paired with predict.yml's 1st/20th schedule: a
+    # baseline rolled forward on the 15th gets picked up by the next
+    # prediction run on the 20th, keeping the gap between "real data
+    # lands" and "next review gets predicted" to well under 2 weeks.
     - cron: "0 6 1 * *"
+    - cron: "0 6 15 * *"
 
 permissions:
   contents: write
