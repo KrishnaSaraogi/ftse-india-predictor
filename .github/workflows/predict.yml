@@ -64,12 +64,3 @@ jobs:
           git add data/ outputs/
           git diff --quiet --cached || git commit -m "Prediction run ($(date -u +%Y-%m-%d))"
           git push
-
-      - name: Ping healthchecks.io on success
-        if: success()
-        run: |
-          if [ -n "${{ secrets.HEALTHCHECK_PING_URL_PREDICT }}" ]; then
-            curl -fsS -m 10 --retry 3 "${{ secrets.HEALTHCHECK_PING_URL_PREDICT }}" || true
-          else
-            echo "HEALTHCHECK_PING_URL_PREDICT secret not set - skipping ping"
-          fi
