@@ -23,6 +23,7 @@ from openpyxl import load_workbook
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
 from ftse_predictor.fetchers import find_nport_filing
 from ftse_predictor.report import update_outcomes, apply_formatting
+from ftse_predictor.baseline import _load_constituent_baseline
 
 DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 OUT_DIR = Path(__file__).resolve().parent.parent / "outputs"
@@ -62,6 +63,14 @@ def _has_pending_prediction(target_date):
 
 
 def main():
+    universe_path = DATA_DIR / "eligible_universe.csv"
+    if not universe_path.exists():
+        print(f"ERROR: {universe_path} not found - cannot proceed.")
+        sys.exit(1)
+    uni = pd.read_csv(universe_path)
+    uni["isin_norm"] = uni["ISIN Code"].astype(str).str.strip().str.upper()
+    isin_lookup = dict(zip(uni["Symbol"], uni["isin_norm"]))
+
     for target in _candidate_quarter_ends():
         target_str = str(target.date())
         print(f"Checking for N-PORT filing covering {target_str}...")
@@ -75,9 +84,15 @@ def main():
         new_isins = set(holdings["isin_norm"])
 
         if BASELINE_PATH.exists():
-            old = pd.read_csv(BASELINE_PATH)
-            old["isin_norm"] = old["isin"].astype(str).str.strip().str.upper()
-            old_isins = set(old["isin_norm"])
+            # THE FIX: the old baseline may be in EITHER format (simple
+            # isin/name, or a raw FTSE export needing fuzzy name
+            # matching) - use the same shared loader run_prediction.py
+            # uses, rather than assuming a plain 'isin' column always
+            # exists. That assumption crashed the first live run
+            # ("KeyError: 'isin'") on an otherwise-successful SEC EDGAR
+            # pull, against a baseline that was still in raw FTSE
+            # export format.
+            old_isins, _, _ = _load_constituent_baseline(str(BASELINE_PATH), uni)
         else:
             old_isins = set()
 
@@ -86,10 +101,6 @@ def main():
         print(f"  raw adds: {len(raw_adds)}, raw removes: {len(raw_removes)}")
 
         if _has_pending_prediction(target):
-            uni = pd.read_csv(DATA_DIR / "eligible_universe.csv")
-            uni["isin_norm"] = uni["ISIN Code"].astype(str).str.strip().str.upper()
-            isin_lookup = dict(zip(uni["Symbol"], uni["isin_norm"]))
-
             stats = update_outcomes(str(WORKBOOK_PATH), target, raw_adds,
                                     raw_removes, isin_lookup)
             apply_formatting(str(WORKBOOK_PATH))
